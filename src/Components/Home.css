@@ -1,0 +1,200 @@
+/* #Home{
+    background-color: rgb(223, 205, 223);
+} */
+#aboutbutton{
+    background-color: rgb(29, 29, 117);
+    text-align: center;
+    border-radius: 2rem;
+    box-shadow: 0px 6px 10px #8f80e2;
+}
+#arrow{
+    padding-left: 4px;
+}
+#arrow:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+#aboutbutton:hover{
+    width: 135px ;
+    height: 40px;
+}
+#homebio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#heroes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (width<576px) {
+    #Home{
+        padding-top: 11vh;
+        padding-bottom: 2rem;
+    }
+}
+@media only screen and (width>=768px) {
+    #Home{
+        padding-top: 18vh;
+        padding-bottom: 16rem;
+    }
+}
+@media only screen and (width>=992px) {
+    #Home{
+        padding-top: 18vh;
+    }
+}
+@media only screen and (width<576px) {
+    #homegrid{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+    }
+}
+@media only screen and (width>=768px) {
+    #homegrid{
+        padding-top: 8rem;
+        padding-bottom: 12rem;
+    }
+}
+
+.animated {
+    position: relative;
+}
+
+.animated-info {
+    display: inline-block;
+    vertical-align: top;
+    min-width: 300px;
+    position: relative;
+    font-size: 2rem;
+}
+
+.animated-item {
+    color: #a73636;
+    line-height: inherit;
+    display: block;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    animation: BottomTotop 5s linear infinite 0s;
+}
+
+.animated-item:nth-child(2n+2) {
+    animation-delay: 2s;
+}
+.animated-item:nth-child(3n+3) {
+    animation-delay: 3.5s;
+}
+
+
+@keyframes BottomTotop {
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+
+    10% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    25% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    30% {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+#greeting{
+    letter-spacing: 0.2rem;
+    color: rgb(21, 35, 141);
+    font-size: 2.5rem;
+}
+.heroname{
+    color:#ff9100;
+    font-size: 2.5rem;
+}
+#homebio{
+    animation: homebio .8s ease-in;
+}
+@keyframes homebio{
+    0%{
+        transform: skewX(23deg) translateX(-500px);
+    }
+    100%{
+        transform: skewX(0deg);
+    }
+}
+.tilt-box-wrap{
+	position: relative;
+	transition: all 0.6s ease-out;
+	perspective: 1000px
+}
+
+.tilt-box{
+	width: 100%;
+	height: 100%;
+	background: rgb(255, 255, 255);
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	transition: all 0.3s ease-out;
+	transform:rotateX(0deg) rotateY(0deg);
+
+}
+.tilt-box strong{
+	transform:translateZ(0.1px);
+}
+.t_over{
+	width: 15%;
+	height: 15%;
+	position: absolute;
+	z-index: 1;
+}
+
+.t_over:nth-child(1){ left: 0; top: 0; }
+.t_over:nth-child(2){ left: 15%; top: 0; }
+.t_over:nth-child(3){ left: 30%; top: 0; }
+.t_over:nth-child(4){ left: 0; top: 15%; }
+.t_over:nth-child(5){ left: 15%; top: 15%; }
+.t_over:nth-child(6){ left: 30%; top: 15%; }
+.t_over:nth-child(7){ left: 0; top: 30%; }
+.t_over:nth-child(8){ left: 15%; top: 30%; }
+.t_over:nth-child(9){ left: 30%; top: 30%; }
+.t_over:nth-child(1):hover ~ .tilt-box{transform:rotateX(-10deg) rotateY(10deg);}
+.t_over:nth-child(2):hover ~ .tilt-box{transform: rotateX(-10deg) rotateY(0deg)}
+.t_over:nth-child(3):hover ~ .tilt-box{transform: rotateX(-10deg) rotateY(-10deg)}
+.t_over:nth-child(4):hover ~ .tilt-box{transform: rotateX(0deg) rotateY(10deg)}
+.t_over:nth-child(5):hover ~ .tilt-box{transform: rotateX(0deg) rotateY(0deg)}
+.t_over:nth-child(6):hover ~ .tilt-box{transform: rotateX(0deg) rotateY(-10deg)}
+.t_over:nth-child(7):hover ~ .tilt-box{transform:rotateX(10deg) rotateY(10deg);}
+.t_over:nth-child(8):hover ~ .tilt-box{transform: rotateX(10deg) rotateY(0deg)}
+.t_over:nth-child(9):hover ~ .tilt-box{transform: rotateX(10deg) rotateY(-10deg)}
+

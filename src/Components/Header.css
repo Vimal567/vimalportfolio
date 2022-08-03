@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+
+#brand{
+    margin-right: 20px;
+}
+#name{
+    font-family: 'Style Script', cursive;
+    font-size: x-large;
+}
+.navheading{
+    color: white;
+}
+.navheading:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+#name:hover{
+    color: red;
+}
+.space{
+    padding-right: 20px !important;
+}
+#navbg{
+    background-color: rgb(38, 38, 233);
+}
