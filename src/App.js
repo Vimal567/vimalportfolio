@@ -5,6 +5,7 @@ import Header from './Components/Header';
 import Home from './Components/Home';
 import SocialIcons from './Components/SocialIcons';
 import About from './Components/About';
+import Skills from "./Components/Skills"
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Header />
         <Home />
         <About />
+        <Skills />
     </ThemeProvider >
 
   );

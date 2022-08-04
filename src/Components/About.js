@@ -1,7 +1,7 @@
 import DownloadIcon from '@mui/icons-material/Download';
 import {Button} from "@mui/material"
 import PersonIcon from '@mui/icons-material/Person';
-import vimalpic from "./images/Vimal2.png"
+import vimalpic from "./images/Vimal.png"
 import { Container,Row,Col } from "react-bootstrap";
 import "./About.css";
 export default function About(){

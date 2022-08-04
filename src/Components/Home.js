@@ -3,7 +3,7 @@ import {Button, Typography} from "@mui/material"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container,Row,Col } from "react-bootstrap";
 import "./Home.css"
-import homeimage from "./images/homeimage-modified2.png";
+import homeimage from "./images/homeimage.png";
 import { Box } from '@mui/system';
 import { Link } from 'react-scroll';
 
