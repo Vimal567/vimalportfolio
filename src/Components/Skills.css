@@ -1,5 +1,4 @@
 #Skills {
-  min-height: 30vh;
   background: linear-gradient(to bottom, #57059e, #4a00e0);
 }
 .skills h2 {
@@ -105,19 +104,19 @@
   }
 }
 @media only screen and (width<576px) {
-  #Skills{
+  #skills{
       padding-top: 11vh;
       padding-bottom: 2rem;
   }
 }
-@media only screen and (width>=768px) {
-    #Skills{
+@media only screen and (width<=768px) {
+    #skills{
         padding-top: 10vh;
         padding-bottom: 16rem;
     }
 }
 @media only screen and (width>=992px) {
-    #Skills{
-        padding-top: 10vh;
+    #skills{
+        padding-bottom: 15vh;
     }
 }

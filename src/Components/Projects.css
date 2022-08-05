@@ -1,0 +1,109 @@
+.work {
+    /* background: #010124; */
+    background: linear-gradient(to bottom, #000031, #00002c);
+    min-height: 100vh;
+  }
+.heading{
+    color: #fff;
+    padding-top: 11vh;
+  }
+  .work .heading span {
+    color: rgb(255, 230, 0);
+    padding-left: 0.7rem;
+  }
+.heading{
+  display: flex;
+  justify-content: center;
+}
+
+.codeicon{
+  width: 3% !important;
+  height: 3% !important;
+} 
+.projectcontainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  align-items: center;
+  
+}
+
+.projectboxes {
+  transform-style: preserve-3d;
+  transform: perspective(2000px);
+}
+.cardss{  
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+
+}
+.projectimage:hover{
+  cursor: pointer !important;
+}
+.cardcontent{
+  transform: translateZ(30px) scale(0.8);
+  width: 80%;
+  margin-left: 10%;
+}
+.cardtitle{
+  display: flex;
+  justify-content: center;
+  font-size: x-large;
+  font-weight: bold;
+  transform: translateZ(50px) scale(0.8);
+  width: 70%;
+  margin-left: 10%;
+
+}
+.toolused{
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  color: gray;
+  transform: translateZ(8px) scale(0.8);
+}
+.cardicons{
+  display: flex;
+  justify-content: space-around;
+  transform: translateZ(40px) scale(0.8);
+  width: 70%;
+  margin-left: 10%;
+}
+.iconpointer:hover{
+  cursor: pointer !important;
+}
+
+@media screen and (width>430px) {
+  .cardss{
+    margin-top: 3rem;
+    margin-left: 7rem;
+
+  }
+}
+@media screen and (width>900px) {
+  .cardss{
+    margin-top: 3rem;
+  }
+}
+@media screen and (width>1400px) {
+  .cardss{
+    margin-top: 3rem;
+    margin-left: 14rem;
+  }
+}
+@media only screen and (width<576px) {
+  .work{
+      padding-bottom: 2rem;
+  }
+}
+@media only screen and (width<=768px) {
+  .work{
+        padding-bottom: 16rem;
+    }
+}
+@media only screen and (width>=992px) {
+  .work{
+        padding-bottom: 15vh;
+    }
+}
