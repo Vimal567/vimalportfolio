@@ -19,7 +19,7 @@ export default function Projects(){
         <div id="Projects">
             <section class="work">
                 <h2 class="heading"><CodeIcon className='codeicon' />Projects <span>Made</span></h2>
-                <Container className='projectcontainer'>
+                <Container fluid={"xs"} className='projectcontainer'>
                 {/* <Tilt
                     className="parallax-effect-img"
                     tiltMaxAngleX={40}

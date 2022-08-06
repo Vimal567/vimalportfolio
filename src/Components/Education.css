@@ -19,7 +19,7 @@
 .edu-inner-container{
     padding: 2rem;
     border: 3px solid transparent;
-    border-image: linear-gradient(45deg, red , yellow);
+    border-image: linear-gradient(45deg, rgb(68, 0, 255) , rgb(212, 142, 62));
     border-image-slice: 1;
     display: flex;
     flex-wrap: wrap;
@@ -28,6 +28,9 @@
 }
 .edu-inner-container:hover{
     cursor: pointer;
+}
+.edu-body{
+    margin-bottom: 2rem;
 }
 .edu-logo-container{
     display: flex;
@@ -55,5 +58,11 @@
     .edu-inner-container{
         min-width: 1000px;
         max-height: 250px;
+    }
+}
+@media screen and (width<568px) {
+    .edu-inner-container{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
 }

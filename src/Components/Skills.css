@@ -78,29 +78,34 @@
 @media only screen and (width<576px) {
   .laptop{
     padding-right: 1rem;
-    width: 10% !important;
-    height: 10% !important;
+    width: 12% !important;
+    height: 12% !important;
   }
 }
-@media only screen and (width<=768px) {
+@media only screen and (width>=576px) {
   .laptop{
     padding-right: 1rem;
     width: 8% !important;
     height: 8% !important;
   }
 }
-@media only screen and (width<=992px) {
+@media only screen and (width>=768px) {
   .laptop{
     padding-right: 1rem;
     width: 6% !important;
     height: 6% !important;
   }
 }
-@media only screen and (width<=1200px) {
+@media only screen and (width>=992px) {
   .laptop{
     padding-right: 1rem;
     width: 6% !important;
     height: 6% !important;
+  }
+}
+@media only screen and (width<576px) {
+  .heading{
+    padding-bottom: 4rem;
   }
 }
 @media only screen and (width<576px) {

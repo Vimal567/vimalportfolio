@@ -8,6 +8,7 @@ import About from './Components/About';
 import Skills from "./Components/Skills"
 import Projects from './Components/Projects';
 import Education from "./Components/Education"
+import Contact from './Components/Contact';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Skills />
         <Projects />
         <Education />
+        <Contact />
     </ThemeProvider >
 
   );

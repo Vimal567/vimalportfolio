@@ -1,0 +1,87 @@
+#Contact{
+    min-height: 110vh;
+    background: linear-gradient(to right, #36d1dc, #5b86e5);
+}
+.contact-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    padding-top: 4rem;
+}
+.contact-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #29a3ac, #3467d3);
+    min-height: 73vh;
+
+}
+
+.contact-card{
+    min-width: 30vh;
+    min-height: 65vh;
+    padding: 1.5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+
+}
+.contact-body{
+    text-align: center;
+}
+.contact-content{
+    font-size: large;
+    font-weight: 400;
+}
+textarea{
+    width: 18rem;
+}
+.send{
+    font-size: 1.05rem;
+    width: 6.5rem;
+    height: 2.5rem;
+    display: flex;
+    background: #2506ad;
+    border: none;
+    border-radius: 0.5rem;
+}
+.send:hover{
+    background: #2506ad;
+    box-shadow: 3px 8px 10px #8f80e2;
+
+}
+.sendicon{
+    margin-left: 1rem;
+}
+.sendicon:hover{
+    margin-left: 1.5rem;
+}
+.contact-form-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.madeby{
+    color: rgb(73, 35, 107);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7rem;
+}
+.codeweb{
+    display: flex;
+    justify-content: center;
+}
+.codewebicon{
+    background-color: white;
+    border-radius: 3rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+@media screen and (width<568px) {
+    .contact-card{
+        margin-top: 2rem;
+    }
+}

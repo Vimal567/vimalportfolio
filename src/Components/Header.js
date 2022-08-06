@@ -17,7 +17,6 @@ export default function Header(){
               <Nav.Link className='navheading space' ><Link to="About" >About</Link></Nav.Link>
               <Nav.Link className='navheading space' ><Link to="Skills" >Skills</Link></Nav.Link>
               <Nav.Link className='navheading space' ><Link to="Projects" >Projects</Link></Nav.Link>
-              <Nav.Link className='navheading space' ><Link to="Experience" >Experience</Link></Nav.Link>
               <Nav.Link className='navheading space' ><Link to="Education" >Education</Link></Nav.Link>
               <Nav.Link className='navheading space' ><Link to="Contact" >Contact</Link></Nav.Link>
             </Nav>

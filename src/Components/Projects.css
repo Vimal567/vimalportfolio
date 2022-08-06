@@ -24,7 +24,6 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-
   align-items: center;
   
 }
@@ -74,7 +73,34 @@
 .iconpointer:hover{
   cursor: pointer !important;
 }
-
+@media screen and (width<568px) {
+  .codeicon{
+      width: 2rem !important ;
+      height: 2rem !important;
+      margin-right: 1rem;
+  }
+}
+@media screen and (width<568px) {
+  .heading{
+      margin-right: 2 rem;
+  }
+}
+@media screen and (width<568px) {
+  .projectcontainer{
+      margin-left: 2.5rem;
+      margin-top: 3rem;
+  }
+}
+@media screen and (width>900px) {
+  .projectcontainer{
+      margin-left: 4rem;
+  }
+}
+@media screen and (width<568px) {
+  .projectboxes{
+      margin-top: 2rem;
+  }
+}
 @media screen and (width>430px) {
   .cardss{
     margin-top: 3rem;
