@@ -32,6 +32,7 @@
 .projectboxes {
   transform-style: preserve-3d;
   transform: perspective(2000px);
+  padding-bottom: 1rem;
 }
 .cardss{  
   transform-style: preserve-3d;
