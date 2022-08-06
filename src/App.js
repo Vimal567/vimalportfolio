@@ -7,6 +7,7 @@ import SocialIcons from './Components/SocialIcons';
 import About from './Components/About';
 import Skills from "./Components/Skills"
 import Projects from './Components/Projects';
+import Education from "./Components/Education"
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <About />
         <Skills />
         <Projects />
+        <Education />
     </ThemeProvider >
 
   );
