@@ -18,8 +18,8 @@ export default function About(){
                 <Row>   
                     <Col sm={12} md={6} lg={6} id="vimalpic">
                         <Tilt className="tilt-container"
-                            tiltMaxAngleX={9}
-                            tiltMaxAngleY={9}
+                            tiltMaxAngleX={12}
+                            tiltMaxAngleY={12}
                             perspective={3000}
                             transitionSpeed={1500}
                             >

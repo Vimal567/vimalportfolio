@@ -1,5 +1,5 @@
 #Home{
-    background: linear-gradient(to right, rgb(223, 205, 223), rgb(189, 160, 189));
+    background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
     min-height: 100vh;
 }
 #aboutbutton{
@@ -41,6 +41,11 @@
     transform: perspective(1000px);
     background-color: inherit;
     border: none;
+}
+@media only screen and (width>=768px) {
+    .home-container{
+        margin-top: 4rem;
+    }
 }
 @media only screen and (width<576px) {
     #Home{
@@ -145,7 +150,10 @@
     color: rgb(21, 35, 141);
     font-size: 3rem;
 }
+.peace{
+    height: 4rem;
+}
 .heroname{
-    color:#ff9100;
+    color:#f1cb4f;
     font-size: 3rem;
 }

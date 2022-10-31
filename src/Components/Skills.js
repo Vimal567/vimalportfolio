@@ -1,4 +1,3 @@
-
 import html from "./images/skills/html.png"
 import css from "./images/skills/css.png"
 import javascript from "./images/skills/javascript.png"
@@ -10,11 +9,11 @@ import restapi from "./images/skills/rest.png"
 import responsive from "./images/skills/responsive.png"
 import heroku from "./images/skills/heroku.png"
 import netlify from "./images/skills/netlify.png"
-import dom from "./images/skills/dom.png"
 import cpp from "./images/skills/cpp.png"
 import python from "./images/skills/python.png"
-import dsa from "./images/skills/dsa.png"
-import java from "./images/skills/java.png"
+import nodejs from "./images/skills/nodejs.png"
+import mongodb from "./images/skills/mongodb.png"
+import expressjs from "./images/skills/expressjs.png"
 import skillimg from "./images/skill3.gif"
 import { Container,Row,Col } from "react-bootstrap";
 import LaptopIcon from '@mui/icons-material/Laptop';
@@ -80,8 +79,16 @@ export default function Skills(){
                                         <span className="skillicontext">Netlify</span>
                                     </div>
                                     <div class="iconboxes">
-                                        <img alt="DOM" src={dom}/>
-                                        <span className="skillicontext">DOM</span>
+                                        <img alt="node js" src={nodejs}/>
+                                        <span className="skillicontext">Node Js</span>
+                                    </div>
+                                    <div class="iconboxes">
+                                        <img alt="MongoDB" src={mongodb}/>
+                                        <span className="skillicontext">MongoDB</span>
+                                    </div>
+                                    <div class="iconboxes">
+                                        <img alt="Express js" src={expressjs}/>
+                                        <span className="skillicontext">Express Js</span>
                                     </div>
                                     <div class="iconboxes">
                                         <img alt="C++" src={cpp}/>
@@ -90,14 +97,6 @@ export default function Skills(){
                                     <div class="iconboxes">
                                         <img alt="python" src={python}/>
                                         <span className="skillicontext">Python</span>
-                                    </div>
-                                    <div class="iconboxes">
-                                        <img alt="DSA" src={dsa}/>
-                                        <span className="skillicontext">DSA</span>
-                                    </div>
-                                    <div class="iconboxes">
-                                        <img alt="Java" src={java}/>
-                                        <span className="skillicontext">Java</span>
                                     </div>
                                 </div>
                             </Container>

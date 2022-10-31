@@ -1,5 +1,5 @@
 #About{
-    background:linear-gradient(to right, rgb(243, 251, 249), rgb(227, 250, 251));
+    background: linear-gradient(to right, #eef8f7, #ceecdf);
 }
 #aboutHeading{
     display: flex;

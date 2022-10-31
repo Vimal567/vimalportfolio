@@ -1,3 +1,4 @@
+import peace from "./images/peace.png"
 import finger from "./images/finger.png"
 import ArrowCircleDownIcon from '@mui/icons-material/ArrowCircleDown';
 import {Button, Typography} from "@mui/material"
@@ -12,14 +13,14 @@ import { Link } from 'react-scroll';
 export default function Home(){
   return (
     <div id="Home">
-    <Container fluid="md" >
+    <Container fluid="md" className="home-container">
       <Row >
         <Col sm={12} md={6} lg={6} id="homebio">
           <div>
           <Typography
                 className="animated animated-text"
               >
-                <span id='greeting'>Hi There,<br/> I'm </span><span className="heroname">Vimal</span>
+                <span id='greeting'>Hi There,<br/> I'm </span><span className="heroname">Vimal<img alt="peace" src={peace} className="peace" /></span>
                 <br/>
                 <Box className="animated-info" >
                   <span className="animated-item ">Software Developer</span>

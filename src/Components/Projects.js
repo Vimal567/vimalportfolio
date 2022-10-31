@@ -77,7 +77,7 @@ export default function Projects(){
                     <img alt='projectimage' variant="top" src={Xboard} className="projectimage" />
                     <div className='cardtitle'>Xboard</div>
                     <div className='cardcontent' >
-                    A news feed website that features the latest news for selective topics, from Flipboard.
+                        A news feed website that features the latest news for selective topics, from RSS feed of Flipboard.
                     </div>
                     <div className='toolused'>HTML5 | CSS3 | BootStrap | JavaScript</div>
                     <Card.Body className='cardicons'>
