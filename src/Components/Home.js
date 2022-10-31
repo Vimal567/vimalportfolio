@@ -1,9 +1,11 @@
+import finger from "./images/finger.png"
 import ArrowCircleDownIcon from '@mui/icons-material/ArrowCircleDown';
 import {Button, Typography} from "@mui/material"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container,Row,Col } from "react-bootstrap";
+import { Card, Container,Row,Col } from "react-bootstrap";
 import "./Home.css"
 import homeimage from "./images/homeimage.png";
+import Tilt from 'react-parallax-tilt';
 import { Box } from '@mui/system';
 import { Link } from 'react-scroll';
 
@@ -26,26 +28,22 @@ export default function Home(){
                 </Box>
               </Typography>
           <br/><br/>
-          <Button id="aboutbutton" variant="contained"><Link to="About" >About me<ArrowCircleDownIcon id="arrow" /></Link></Button>
+          <Button id="aboutbutton" variant="contained"><Link to="About" >About me<ArrowCircleDownIcon id="arrow" /></Link></Button><img alt="pointing" src={finger}/>
           </div>
           <br/>
         </Col >
         <Col sm={12} md={6} lg={6} id="heroes">
-        <div class="tilt-box-wrap">
-		      <span class="t_over"></span>
-		      <span class="t_over"></span>
-		      <span class="t_over"></span>
-		      <span class="t_over"></span>
-		      <span class="t_over"></span>
-		      <span class="t_over"></span>
-		      <span class="t_over"></span>
-		      <span class="t_over"></span>
-		      <span class="t_over"></span>
-		      <div class="tilt-box">
-			      <strong><img alt="homeimage" src={homeimage} className="title" /></strong>
-		      </div>
-	      </div>
-          
+        <Tilt className="hero-container"
+                    tiltMaxAngleX={13}
+                    tiltMaxAngleY={15}
+                    perspective={3000}
+                    transitionSpeed={1500}
+                    >
+                <Card className='hero-card' style={{ width: '20rem' }}>
+                  <img alt="homeimage" src={homeimage} className="home-image" />
+
+                </Card>
+        </Tilt>       
           </Col>
       </Row>
     </Container>

@@ -8,7 +8,11 @@ export default function Header(){
       <div>
         <Navbar className='fixed-top' collapseOnSelect expand="md" id="navbg"  variant="dark">
         <Container>
-          <Link to="Home" ><Navbar.Brand href="#home"><img alt="brand" src={logo} id="brand" /><span id="name">Vimal S</span></Navbar.Brand></Link>
+          <Link to="Home" >
+            <Navbar.Brand href="#home">
+              <img alt="brand" src={logo} id="brand" /><span id="name">Vimal S</span>
+            </Navbar.Brand>
+          </Link>
           <div className='justify-content-end'>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">

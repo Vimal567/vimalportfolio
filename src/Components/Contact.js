@@ -1,5 +1,5 @@
 import github from "./images/contact/github.png"
-import hackerrank from "./images/contact/hacker.png"
+import leetcode from "./images/contact/leetcode.png"
 import codechef from "./images/contact/codechef.png"
 import codeforce from "./images/contact/codeforce.png"
 import Gmail from "./images/contact/gmail.png"
@@ -80,8 +80,8 @@ export default function Contact(){
                 <img onClick={() => openInNewTab('https://www.linkedin.com/in/vimal-s/')} alt="coding website icons" src={Linkedin} className="codewebicon" />
                 <img onClick={() => openInNewTab('mailto:vimalrock82@gmail.com')} alt="coding website icons" src={Gmail} className="codewebicon" />
                 <img onClick={() => openInNewTab('https://github.com/Vimal567')} alt="coding website icons" src={github} className="codewebicon" />
+                <img onClick={() => openInNewTab('https://www.hackerrank.com/vimalrock82')} alt="coding website icons" src={leetcode} className="codewebicon" />
                 <img onClick={() => openInNewTab('https://auth.geeksforgeeks.org/user/vimalrock82/profile')} alt="coding website icons" src={Geeks} className="codewebicon" />
-                <img onClick={() => openInNewTab('https://www.hackerrank.com/vimalrock82')} alt="coding website icons" src={hackerrank} className="codewebicon" />
                 <img onClick={() => openInNewTab('https://codeforces.com/profile/vimal24')} alt="coding website icons" src={codeforce} className="codewebicon" />
                 <img onClick={() => openInNewTab('https://www.codechef.com/users/vimal24')} alt="coding website icons" src={codechef} className="codewebicon" />
             </div>

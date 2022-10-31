@@ -74,10 +74,19 @@ textarea{
     justify-content: center;
 }
 .codewebicon{
-    background-color: white;
+    background-color: #dde0e6;
+    width: 2rem;
     border-radius: 3rem;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
+    cursor: pointer;
+}
+.codewebicon:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.heart:hover{
+    transform: scale(1.1);
     cursor: pointer;
 }
 @media screen and (width<568px) {

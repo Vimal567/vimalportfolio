@@ -1,16 +1,15 @@
 .work {
-    /* background: #010124; */
-    background: linear-gradient(to bottom, #000031, #00002c);
-    min-height: 100vh;
-  }
+  background: linear-gradient(to bottom, #000031, #00002c);
+  min-height: 100vh;
+}
 .heading{
-    color: #fff;
-    padding-top: 11vh;
-  }
-  .work .heading span {
-    color: rgb(255, 230, 0);
-    padding-left: 0.7rem;
-  }
+  color: #fff;
+  padding-top: 11vh;
+}
+.work .heading span {
+  color: rgb(255, 230, 0);
+  padding-left: 0.7rem;
+}
 .heading{
   display: flex;
   justify-content: center;
@@ -67,11 +66,23 @@
   display: flex;
   justify-content: space-around;
   transform: translateZ(40px) scale(0.8);
-  width: 70%;
-  margin-left: 10%;
+}
+.view-button{
+  background-image: linear-gradient(to right, #09C6F9,#045DE9);
+  border: none;
+  width: 6rem;
+  height: 2rem;
+  border-radius: 1rem;
+}
+.details-button{
+  background-image: linear-gradient(to right, #ce4421,#e69540);
+  border: none;
+  width: 6rem;
+  height: 2rem;
+  border-radius: 1rem;
 }
 .iconpointer:hover{
-  cursor: pointer !important;
+  cursor: pointer;
 }
 @media screen and (width<568px) {
   .codeicon{

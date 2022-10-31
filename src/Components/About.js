@@ -2,7 +2,8 @@ import DownloadIcon from '@mui/icons-material/Download';
 import {Button} from "@mui/material"
 import PersonIcon from '@mui/icons-material/Person';
 import vimalpic from "./images/Vimal.png"
-import { Container,Row,Col } from "react-bootstrap";
+import Tilt from 'react-parallax-tilt';
+import { Card, Container,Row,Col } from "react-bootstrap";
 import "./About.css";
 export default function About(){
     const openInNewTab = (url) => {
@@ -16,29 +17,25 @@ export default function About(){
             <Container fluid="md" id="aboutcontainer">
                 <Row>   
                     <Col sm={12} md={6} lg={6} id="vimalpic">
-                    <div class="tilt-box-wraps">
-		                <span class="t_overs"></span>
-		                <span class="t_overs"></span>
-		                <span class="t_overs"></span>
-		                <span class="t_overs"></span>
-		                <span class="t_overs"></span>
-		                <span class="t_overs"></span>
-		                <span class="t_overs"></span>
-		                <span class="t_overs"></span>
-		                <span class="t_overs"></span>
-		                <div class="tilt-boxs">
-			                <strong><img alt="vimalpic" src={vimalpic} className="imgpic" /></strong>
-		                </div>
-	                </div>
-                    <br/>
-                        </Col>
+                        <Tilt className="tilt-container"
+                            tiltMaxAngleX={9}
+                            tiltMaxAngleY={9}
+                            perspective={3000}
+                            transitionSpeed={1500}
+                            >
+                            <Card className='tilt-card' style={{ width: '16rem' }}>
+                                <img alt="vimalpic" src={vimalpic} className="imgpic" />
+                            </Card>
+                        </Tilt> 
+                        <br/>
+                    </Col>
                     <Col sm={12} md={6} lg={6} id="vimalbio">
                     <div id='paragraph'>
                             <div className='firstname'>I'm Vimal</div>
-                            <div className='occupation'>I'm into software development</div><br/>
+                            <div className='occupation'>I'm into Full stack Software development</div><br/>
                             <div>
-                                Hello, I'm 2021 graduate engineer raising into Software development. I always look towards obtaining a challenging and competitive environment where I can apply my technical and analytical skills to gain valuable insights and experience in the varied areas of my interest.
-                                I've worked on <span className='in'>HTML</span>,<span className='in'> CSS</span>,<span className='in'> Javascript</span>,<span className='in'> Bootstrap</span>,<span className='in'> ReactJs</span>  and also completed some Industrial Graded projects on Software development.
+                                Hello, I'm a 2021 graduate engineer raising into Software development. I always look towards obtaining a challenging and competitive environment where I can apply my technical and analytical skills to gain valuable insights and experience in the varied areas of my interest.
+                                I've worked on <span className='in'>HTML</span>,<span className='in'> CSS</span>,<span className='in'> Javascript</span>,<span className='in'> Bootstrap</span>,<span className='in'> ReactJs</span>,<span className='in'> NodeJs</span> ,<span className='in'> ExpressJs</span>,<span className='in'> Mongo DB</span>    and also completed some Industrial Graded projects on Full stack development.
                                 Apart from that I'm also trying to become a competitive coder by enhancing my DSA knowledge in C++ .
                             </div>
                             <br/>

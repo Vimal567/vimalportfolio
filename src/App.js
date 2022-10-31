@@ -1,4 +1,3 @@
-import './App.css';
 import { ThemeProvider } from "@mui/system";
 import theme from "./theme";
 import Header from './Components/Header';
@@ -14,7 +13,6 @@ import Contact from './Components/Contact';
 function App() {
 
   return (
-
     <ThemeProvider theme={theme}>
         <div className="pc-device">
           <SocialIcons />

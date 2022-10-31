@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import styled from "styled-components";
-import { Twitter, SocialGithub, LinkedIn, Instagram } from "./images/svgs";
+import { SocialGithub, LinkedIn, Instagram, Facebook } from "./images/svgs";
 import './SocialIcons.css';
 
 const Icons = styled.div`
@@ -68,7 +68,7 @@ const SocialIcons = () => {
           href="https://twitter.com"
           rel="noreferrer"
         >
-          <Twitter width={22} height={22} className="icons"/>
+          <Facebook width={22} height={22} className="icons"/>
         </a>
       </motion.div>
       <motion.div
