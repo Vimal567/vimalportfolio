@@ -24,7 +24,7 @@ export default function Home(){
                 <br/>
                 <Box className="animated-info" >
                   <span className="animated-item ">Software Developer</span>
-                  <span className="animated-item ">Frontend Developer</span>
+                  <span className="animated-item ">Full Stack Developer</span>
                   <span className="animated-item ">Web Developer</span>
                 </Box>
               </Typography>
