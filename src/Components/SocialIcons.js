@@ -65,7 +65,7 @@ const SocialIcons = () => {
         <a
           style={{ color: "inherit" }}
           target="_blank"
-          href="https://twitter.com"
+          href="https://www.facebook.com/vimalrock82/"
           rel="noreferrer"
         >
           <Facebook width={22} height={22} className="icons"/>

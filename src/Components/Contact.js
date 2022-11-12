@@ -50,22 +50,22 @@ export default function Contact(){
                                 <input type="hidden" name="_template" value="table"></input>
                                 <Form.Group className="mb-3" controlId="formBasicName" >
                                     <Form.Label>Name</Form.Label>
-                                    <Form.Control required type="name" name="Name" placeholder="Enter Name" />
+                                    <Form.Control className="form-inputs" required type="name" name="Name" placeholder="Enter Name" />
                                 </Form.Group>
                                 <Form.Group className="mb-3" controlId="formBasicEmail">
                                     <Form.Label>Email address</Form.Label>
-                                    <Form.Control required type="email" name="Email" placeholder="Enter email" />
+                                    <Form.Control className="form-inputs" required type="email" name="Email" placeholder="Enter email" />
                                     <Form.Text className="text-muted">
                                     We'll never share your email with anyone else.
                                     </Form.Text>
                                 </Form.Group>
                                 <Form.Group className="mb-3" controlId="formBasicPhone">
                                     <Form.Label>Phone Number</Form.Label>
-                                    <Form.Control type="name" name="Phone Number" placeholder="Ex: +91 0123456789" />
+                                    <Form.Control className="form-inputs" type="name" name="Phone Number" placeholder="Ex: +91 0123456789" />
                                 </Form.Group>
                                 <Form.Group className="mb-3" controlId="formBasicText">
                                     <Form.Label>Message</Form.Label><br />
-                                    <textarea name="Message" placeholder="Hi!!"></textarea>
+                                    <textarea className="form-inputs" name="Message" placeholder="Hi!!"></textarea>
                                 </Form.Group>
                                 <Button className="send" variant="primary" type="submit">Send <SendIcon className="sendicon" />
                                 </Button>

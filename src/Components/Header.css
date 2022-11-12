@@ -17,6 +17,7 @@
 }
 #name:hover{
     color: red;
+    cursor: pointer;
 }
 .space{
     padding-right: 20px !important;
