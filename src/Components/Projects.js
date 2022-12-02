@@ -19,16 +19,6 @@ export default function Projects(){
             <section class="work">
                 <h2 class="heading"><CodeIcon className='codeicon' />Projects <span>Made</span></h2>
                 <Container  className='projectcontainer'>
-                {/* <Tilt
-                    className="parallax-effect-img"
-                    tiltMaxAngleX={40}
-                    tiltMaxAngleY={40}
-                    perspective={800}
-                    transitionSpeed={1500}
-                    scale={1.1}
-                >
-                    <img src="https://media.istockphoto.com/vectors/logo-of-a-green-life-tree-with-roots-and-leaves-vector-illustration-vector-id1130887322?k=20&m=1130887322&s=612x612&w=0&h=dPVnCDJ4ocIqtn51iJDzEKdesx_RikdT74asv81jJdk=" className="inner-element" alt="pic" />
-                </Tilt> */}
                 <Row  className="project-row">
                     <Col xs={12} sm={6} md={6} className="project-column">
                         <Tilt className="projectboxes"

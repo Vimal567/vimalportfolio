@@ -1,5 +1,3 @@
-import { ThemeProvider } from "@mui/system";
-import theme from "./theme";
 import Header from './Components/Header';
 import Home from './Components/Home';
 import SocialIcons from './Components/SocialIcons';
@@ -11,21 +9,19 @@ import Contact from './Components/Contact';
 
 
 function App() {
-
   return (
-    <ThemeProvider theme={theme}>
-        <div className="pc-device">
-          <SocialIcons />
-        </div>
-        <Header />
-        <Home />
-        <About />
-        <Skills />
-        <Projects />
-        <Education />
-        <Contact />
-    </ThemeProvider >
-
+    <div>
+      <div className="pc-device">
+        <SocialIcons />
+      </div>
+      <Header />
+      <Home />
+      <About />
+      <Skills />
+      <Projects />
+      <Education />
+      <Contact />
+    </div >
   );
 }
 
