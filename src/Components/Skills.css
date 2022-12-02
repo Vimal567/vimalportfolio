@@ -14,8 +14,8 @@
 
 .laptop{
   padding-right: 1rem;
-  width: 3% !important;
-  height: 3% !important;
+  width: 3%;
+  height: 3%;
 }
 .skillscontainer{
   background: rgba(0, 0, 22, 0.4);
@@ -56,7 +56,7 @@
 }
 .iconboxes:hover{
   transform: scale(1.1);
-  box-shadow: 0 8px 10px rgba(0, 2, 68, 0.8) !important;
+  box-shadow: 0 8px 10px rgba(0, 2, 68, 0.8);
 }
 
 .skillicontext{
@@ -64,7 +64,6 @@
   display: flex;
   justify-content: center;
   font-family: "Poppins";
-  
 }
 
 @media only screen and (width>=992px) {
@@ -131,5 +130,6 @@
 @media only screen and (width<576px) {
   .iconcontainer{
     margin-left: 3rem;
+    padding-bottom: 3rem;
   }
 }
