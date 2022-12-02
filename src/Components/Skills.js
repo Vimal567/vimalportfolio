@@ -14,7 +14,7 @@ import python from "./images/skills/python.png"
 import nodejs from "./images/skills/nodejs.png"
 import mongodb from "./images/skills/mongodb.png"
 import expressjs from "./images/skills/expressjs.png"
-import skillimg from "./images/skill3.gif"
+import skillimg from "./images/skills/skill.gif"
 import { Container,Row,Col } from "react-bootstrap";
 import LaptopIcon from '@mui/icons-material/Laptop';
 import "./Skills.css"

@@ -19,23 +19,22 @@
   width: 3% !important;
   height: 3% !important;
 } 
-.projectcontainer{
+.project-column{
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
-
 .projectboxes {
   transform-style: preserve-3d;
   transform: perspective(2000px);
   padding-bottom: 1rem;
+  width: 18rem;
 }
 .cardss{  
   transform-style: preserve-3d;
   transform: perspective(1000px);
-
 }
 .projectimage:hover{
   cursor: pointer !important;
@@ -53,7 +52,6 @@
   transform: translateZ(50px) scale(0.8);
   width: 70%;
   margin-left: 10%;
-
 }
 .toolused{
   font-size: 1rem;
@@ -96,7 +94,7 @@
       margin-right: 2 rem;
   }
 }
-@media screen and (width<568px) {
+/* @media screen and (width<568px) {
   .projectcontainer{
       margin-left: 2.5rem;
       margin-top: 3rem;
@@ -111,8 +109,8 @@
   .projectboxes{
       margin-top: 2rem;
   }
-}
-@media screen and (width>430px) {
+} */
+/* @media screen and (width>430px) {
   .cardss{
     margin-top: 3rem;
     margin-left: 7rem;
@@ -129,8 +127,8 @@
     margin-top: 3rem;
     margin-left: 14rem;
   }
-}
-@media only screen and (width<576px) {
+} */
+/* @media only screen and (width<576px) {
   .work{
       padding-bottom: 2rem;
   }
@@ -144,4 +142,4 @@
   .work{
         padding-bottom: 15vh;
     }
-}
+} */

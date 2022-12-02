@@ -9,7 +9,7 @@ export default function Header(){
   }
   return(
     <div>
-      <Navbar className='fixed-top' collapseOnSelect expand="md" id="navbg"  variant="dark">
+      <Navbar className='fixed-top header' collapseOnSelect expand="md" id="navbg"  variant="dark">
       <Container>
           <Navbar.Brand onClick={reload}>
             <img alt="brand" src={logo} id="brand" /><span id="name">Vimal S</span>

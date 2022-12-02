@@ -15,16 +15,19 @@
     align-items: center;
     background: linear-gradient(to right, #29a3ac, #3467d3);
     min-height: 73vh;
-
+    max-width: 73rem;
+    margin-bottom: 3rem;
 }
-
+.contact-card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .contact-card{
-    min-width: 30vh;
-    min-height: 65vh;
+    height: 75vh;
     padding: 1.5rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
-
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 .contact-body{
     text-align: center;
