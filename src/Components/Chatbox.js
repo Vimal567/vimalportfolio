@@ -7,6 +7,7 @@ import RefreshIcon from '@mui/icons-material/Refresh';
 import CircularProgress from "@mui/material/CircularProgress";
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import LogoutIcon from '@mui/icons-material/Logout';
+import { Button } from "@mui/material";
 import vimalLogo from "./images/chat/vimal.jpg";
 
 const Chatbox = ({setChatClick}) => {
@@ -142,15 +143,15 @@ const Chatbox = ({setChatClick}) => {
             <div className="chat-header">
                 <img alt="vimal" src={vimalLogo} className="vimalLogo" />How Can I help you?
                 <button title="close" className="close-button" onClick={handleClose}>X</button>
-                <LogoutIcon className="logout" onClick={handleClearChat} />
+                {chatInputDisplay ?<LogoutIcon className="logout" onClick={handleClearChat} /> : ""}
             </div>
             <div className="chat-body">
                 {newName ? 
                     <div className="start-chat">
-                        Welcome user, Enter you name to start the live chat.
-                        I will try to reply you when I get connected.
-                        <input  className="name-input" onChange={handleNameInput} />
-                        <button value={nameInput} onClick={handleNameEntered}>Enter</button>
+                        <span className="Welcome-name-para">Welcome user, Enter you name to start the live chat.
+                        I will try to reply you when I get connected.</span>
+                        <input  className="name-input" placeholder="Type your name!" onChange={handleNameInput} />
+                        <Button variant="contained" value={nameInput} onClick={handleNameEntered}>Enter</Button >
                     </div>:
                     <div className="chat-started">
                         <span className="welcome-message">
@@ -162,7 +163,9 @@ const Chatbox = ({setChatClick}) => {
                         {loading ? <div className="loading"><CircularProgress />Loading messages</div> : 
                         userData.message.map((item, index) => {
                             return <div key={index} className={item.person === "admin" ? "admin" : "user"}>
-                                <span className="person">{item.person === "admin" ? <GiDevilMask /> : <AiOutlineUser />}{item.person}:</span><br />
+                                <span className="person">
+                                    {item.person === "admin" ? <GiDevilMask /> : <AiOutlineUser />}{item.person === "admin" ? "admin:" : `${localName}:`}
+                                </span><br />
                                 {item.text}
                                 <div ref={messagesEnd} />
                             </div>
