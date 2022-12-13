@@ -43,6 +43,7 @@ const Chatbox = ({setChatClick}) => {
             console.log(error);
         }
         setPosted(true);
+        fetchData();
     }
 
     const handleClose = () => {
