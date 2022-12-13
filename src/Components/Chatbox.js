@@ -19,7 +19,7 @@ const Chatbox = ({setChatClick}) => {
     const [localName, setLocalName] = useState("");
     const [newMessage, setNewMessage] = useState("");
     const [loading, setLoading] = useState(true);
-    const [posted, setPosted] = useState(false);
+    const [posted, setPosted] = useState(true);
     const messagesEnd = useRef(null)
 
     const fetchData = async() => {
