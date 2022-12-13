@@ -174,7 +174,10 @@ const Chatbox = ({setChatClick}) => {
                                 <div ref={messagesEnd} />
                             </div>
                         })
-                        ): <div className="loading"><CircularProgress />Creating user Chat</div>}
+                        ): <div className="loading">
+                                <CircularProgress />Creating user Chat, please be patient!<br />Sometimes it takes upto 1 to 2 minute.
+                            </div>
+                        }
                     </div>
                 }
             </div>
