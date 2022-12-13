@@ -13,12 +13,13 @@ import vimalLogo from "./images/chat/vimal.jpg";
 const Chatbox = ({setChatClick}) => {
 
     const [newName, setNewName] = useState(true);
+    const [userData, setUserData] = useState([]);
     const [chatInputDisplay, setChatInputDisplay] = useState(false);
     const [nameInput, setNameInput] = useState("");
     const [localName, setLocalName] = useState("");
-    const [userData, setUserData] = useState([]);
     const [newMessage, setNewMessage] = useState("");
     const [loading, setLoading] = useState(true);
+    const [posted, setPosted] = useState(false);
     const messagesEnd = useRef(null)
 
     const fetchData = async() => {
@@ -34,12 +35,14 @@ const Chatbox = ({setChatClick}) => {
     }
 
     const newChat = async(name) => {
+        setPosted(false);
         try{
             const object = {"name": name};
             await axios.post("https://chat-box.onrender.com/", object);
         }catch(error){
             console.log(error);
         }
+        setPosted(true);
     }
 
     const handleClose = () => {
@@ -73,18 +76,18 @@ const Chatbox = ({setChatClick}) => {
     const handleMessageSubmit = async(event) => {
         const message = event.target.value;
         if(!message)
-            return
+            return;
         const newLine = userData.message.length + 1;
         const name = userData.name;
         const newMessageObj = {
             "text" : message,
             "person": "user",
             "line": newLine
-        }
+        };
         let newObj = {
             "name": name,
             "message": [newMessageObj]
-        }
+        };
         try{
             await axios.patch("https://chat-box.onrender.com/", newObj);
         }catch(error){
@@ -94,9 +97,9 @@ const Chatbox = ({setChatClick}) => {
         newObj = {
             "name": name,
             "message": [...oldMessage, newMessageObj]
-        }
-        setUserData(newObj)
-        setNewMessage("")
+        };
+        setUserData(newObj);
+        setNewMessage("");
         fetchData();
     }
 
@@ -104,7 +107,7 @@ const Chatbox = ({setChatClick}) => {
         try{
             await axios.delete("https://chat-box.onrender.com/" + localName);
         }catch(error){
-            console.log(error)
+            console.log(error);
         }
         localStorage.clear();
         setNewName(true);
@@ -125,7 +128,7 @@ const Chatbox = ({setChatClick}) => {
 
     const scrollToBottom = () => {
         messagesEnd.current?.scrollIntoView({ behavior: "smooth" })
-    }
+    };
 
     useEffect(() => {
         scrollToBottom()
@@ -160,7 +163,7 @@ const Chatbox = ({setChatClick}) => {
                         <span title="refresh">
                             <RefreshIcon className="refresh-icon" onClick={handleRefreshClick} />
                         </span>
-                        {loading ? <div className="loading"><CircularProgress />Loading messages</div> : 
+                        {posted ? (loading ? <div className="loading"><CircularProgress />Loading messages</div> : 
                         userData.message.map((item, index) => {
                             return <div key={index} className={item.person === "admin" ? "admin" : "user"}>
                                 <span className="person">
@@ -170,7 +173,7 @@ const Chatbox = ({setChatClick}) => {
                                 <div ref={messagesEnd} />
                             </div>
                         })
-                        }
+                        ): <div className="loading"><CircularProgress />Creating user Chat</div>}
                     </div>
                 }
             </div>
