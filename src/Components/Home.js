@@ -1,7 +1,7 @@
 import peace from "./images/peace.png"
 import finger from "./images/finger.png"
 import ArrowCircleDownIcon from '@mui/icons-material/ArrowCircleDown';
-import {Button, Typography} from "@mui/material"
+import {Button} from "@mui/material"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Card, Container,Row,Col } from "react-bootstrap";
 import "./Home.css"
