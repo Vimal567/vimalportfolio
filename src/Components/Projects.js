@@ -16,8 +16,8 @@ export default function Projects(){
       }
     return(
         <div id="Projects" >
-            <section class="work">
-                <h2 class="heading"><CodeIcon className='codeicon' />Projects <span>Made</span></h2>
+            <section className="work">
+                <h2 className="heading"><CodeIcon className='codeicon' />Projects <span>Made</span></h2>
                 <Container  className='projectcontainer'>
                 <Row  className="project-row">
                     <Col xs={12} sm={6} md={6} className="project-column">

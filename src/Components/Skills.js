@@ -22,8 +22,8 @@ import "./Skills.css"
 export default function Skills(){
     return(
         <div id="Skills">
-            <section class="skills" id="skills">
-                <h2 class="heading"><LaptopIcon className='laptop'/> Skills & <span> Abilities</span></h2>
+            <section className="skills" id="skills">
+                <h2 className="heading"><LaptopIcon className='laptop'/> Skills & <span> Abilities</span></h2>
                 <Container fluid="md" className="skillscontainer" >
                     <Row>
                         <Col sm={12} md={12} lg={6} className="skillimage">
@@ -31,70 +31,70 @@ export default function Skills(){
                             </Col>
                         <Col sm={12} md={12} lg={6} className="skillicons">
                             <Row>
-                            <Container class="bar">
+                            <Container className="bar">
                                 <div className="iconcontainer">
-                                    <div class="iconboxes">
+                                    <div className="iconboxes">
                                         <img alt="html" src={html}/>
                                         <span className="skillicontext">HTML</span>
                                     </div>
-                                    <div class="iconboxes">
+                                    <div className="iconboxes">
                                         <img alt="css" src={css}/>
                                         <span className="skillicontext">CSS</span>
                                     </div>
-                                    <div class="iconboxes">
+                                    <div className="iconboxes">
                                         <img alt="javascript" src={javascript}/>
                                         <span className="skillicontext">JavaScript</span>
                                     </div>
-                                    <div class="iconboxes">
+                                    <div className="iconboxes">
                                         <img alt="React" src={react}/>
                                         <span className="skillicontext">React</span>
                                     </div>
-                                    <div class="iconboxes">
+                                    <div className="iconboxes">
                                         <img alt="bootstrap" src={bootstrap}/>
                                         <span className="skillicontext">Bootstrap</span>
                                     </div>
-                                    <div class="iconboxes">
+                                    <div className="iconboxes">
                                         <img alt="material ui" src={materialui}/>
                                         <span className="skillicontext">Material UI</span>
                                     </div>
-                                    <div class="iconboxes">
+                                    <div className="iconboxes">
                                         <img alt="github" src={github}/>
                                         <span className="skillicontext">GitHub</span>
                                     </div>
-                                    <div class="iconboxes">
+                                    <div className="iconboxes">
                                         <img alt="Rest api" src={restapi}/>
                                         <span className="skillicontext">Rest Api</span>
                                     </div>
-                                    <div class="iconboxes">
+                                    <div className="iconboxes">
                                         <img alt="Responsive design" src={responsive}/>
                                         <span className="skillicontext">Responsive</span>
                                         <span className="skillicontext"> Design</span>
                                     </div>
-                                    <div class="iconboxes">
+                                    <div className="iconboxes">
                                         <img alt="heroku" src={heroku}/>
                                         <span className="skillicontext">Heroku</span>
                                     </div>
-                                    <div class="iconboxes">
+                                    <div className="iconboxes">
                                         <img alt="netlify" src={netlify}/>
                                         <span className="skillicontext">Netlify</span>
                                     </div>
-                                    <div class="iconboxes">
+                                    <div className="iconboxes">
                                         <img alt="node js" src={nodejs}/>
                                         <span className="skillicontext">Node Js</span>
                                     </div>
-                                    <div class="iconboxes">
+                                    <div className="iconboxes">
                                         <img alt="MongoDB" src={mongodb}/>
                                         <span className="skillicontext">MongoDB</span>
                                     </div>
-                                    <div class="iconboxes">
+                                    <div className="iconboxes">
                                         <img alt="Express js" src={expressjs}/>
                                         <span className="skillicontext">Express Js</span>
                                     </div>
-                                    <div class="iconboxes">
+                                    <div className="iconboxes">
                                         <img alt="C++" src={cpp}/>
                                         <span className="skillicontext">C++</span>
                                     </div>
-                                    <div class="iconboxes">
+                                    <div className="iconboxes">
                                         <img alt="python" src={python}/>
                                         <span className="skillicontext">Python</span>
                                     </div>

@@ -23,8 +23,21 @@
     cursor: pointer;
 }
 .space{
-    padding-right: 20px !important;
+    padding-right: 20px;
+    color: white;
+    font-weight: 400;
+    font-size: large;
+    text-decoration: none;
+}
+.space:hover{
+    cursor: pointer;
+    color: gray;
 }
 #navbg{
     background-color: rgb(38, 38, 233);
+}
+@media screen and (width < 776px) {
+    .space{
+        padding-top: 5px;
+    }
 }

@@ -101,3 +101,8 @@ textarea{
         margin-top: 2rem;
     }
 }
+@media screen and (width<372px) {
+    .contact-card-container{
+        width: 21rem;
+    }
+}

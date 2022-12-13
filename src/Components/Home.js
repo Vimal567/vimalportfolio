@@ -17,7 +17,7 @@ export default function Home(){
       <Row >
         <Col sm={12} md={6} lg={6} id="homebio">
           <div>
-          <Typography
+          <div
                 className="animated animated-text"
               >
                 <span id='greeting'>Hi There,<br/> I'm </span><span className="heroname">Vimal<img alt="peace" src={peace} className="peace" /></span>
@@ -27,7 +27,7 @@ export default function Home(){
                   <span className="animated-item ">Full Stack Developer</span>
                   <span className="animated-item ">Web Developer</span>
                 </Box>
-              </Typography>
+              </div>
           <br/><br/>
           <Button id="aboutbutton" variant="contained"><Link to="About" >About me<ArrowCircleDownIcon id="arrow" /></Link></Button><img alt="pointing" src={finger}/>
           </div>

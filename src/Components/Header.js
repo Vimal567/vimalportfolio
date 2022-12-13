@@ -18,12 +18,12 @@ export default function Header(){
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
           <Nav >
-            <Nav.Link className='navheading space' ><Link to="Home" >Home</Link></Nav.Link>
-            <Nav.Link className='navheading space' ><Link to="About" >About</Link></Nav.Link>
-            <Nav.Link className='navheading space' ><Link to="Skills" >Skills</Link></Nav.Link>
-            <Nav.Link className='navheading space' ><Link to="Projects" >Projects</Link></Nav.Link>
-            <Nav.Link className='navheading space' ><Link to="Education" >Education</Link></Nav.Link>
-            <Nav.Link className='navheading space' ><Link to="Contact" >Contact</Link></Nav.Link>
+            <Link to="Home" className='space'>Home</Link>
+            <Link to="About" className='space'>About</Link>
+            <Link to="Skills" className='space'>Skills</Link>
+            <Link to="Projects" className='space'>Projects</Link>
+            <Link to="Education" className='space'>Education</Link>
+            <Link to="Contact" className='space'>Contact</Link>
           </Nav>
           </Navbar.Collapse>
         </div>
