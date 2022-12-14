@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f4a53a6d.css",
+    "main.js": "/static/js/main.641f092e.js",
+    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/Qtrip.png": "/static/media/Qtrip.cdbeeeb9d40d9ee067c6.png",
+    "static/media/Qkart.png": "/static/media/Qkart.3d371f15510a6a24fca3.png",
+    "static/media/XFlix.png": "/static/media/XFlix.5a17272ed702ffbd6079.png",
+    "static/media/Xboard.png": "/static/media/Xboard.6766192cdfd7cbe1bd92.png",
+    "static/media/skill.gif": "/static/media/skill.47bec979023d84785ee1.gif",
+    "static/media/homeimage.png": "/static/media/homeimage.485f0ea5911e1ff8e205.png",
+    "static/media/Vimal.png": "/static/media/Vimal.f341427940d644b48345.png",
+    "static/media/getin.jfif": "/static/media/getin.e3efc4999ae6b9864f00.jfif",
+    "static/media/collegelogo.png": "/static/media/collegelogo.1d5cde348256bee0e66b.png",
+    "index.html": "/index.html",
+    "main.f4a53a6d.css.map": "/static/css/main.f4a53a6d.css.map",
+    "main.641f092e.js.map": "/static/js/main.641f092e.js.map",
+    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f4a53a6d.css",
+    "static/js/main.641f092e.js"
+  ]
+}
