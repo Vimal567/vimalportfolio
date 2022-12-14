@@ -32,6 +32,15 @@
     width: 1.6rem;
     text-shadow: 1px 1px 0px #b9dcdf;
 }
+.logout{
+    position: absolute;
+    right: 1%;
+    top: 7%;
+    width: 1rem !important;
+}
+.logout:hover{
+    cursor: pointer;
+}
 .chat-body{
     background-color:white;
     height: 70%;
@@ -131,15 +140,6 @@
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2);
-}
-.logout{
-    position: absolute;
-    right: 1%;
-    top: 7%;
-    width: 1rem !important;
-}
-.logout:hover{
-    cursor: pointer;
 }
 .chat-credit{
     display: flex;
