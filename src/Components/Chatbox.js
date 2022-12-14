@@ -26,12 +26,13 @@ const Chatbox = ({setChatClick}) => {
         try{
             setLoading(true);
             let getName = localStorage.getItem("name");
-            getName.toLocaleLowerCase();
             const fetched = await axios.get("https://chat-box.onrender.com/" + getName);
             setUserData(fetched.data);
             setLoading(false);
         }catch(error){
             console.log(error);
+            localStorage.clear();
+            handleClose();
         }
     }
 
@@ -42,6 +43,7 @@ const Chatbox = ({setChatClick}) => {
             await axios.post("https://chat-box.onrender.com/", object);
         }catch(error){
             console.log(error);
+            window.alert("Please refresh the page");
         }
         setPosted(true);
         fetchData();
@@ -84,7 +86,7 @@ const Chatbox = ({setChatClick}) => {
         const name = userData.name;
         const newMessageObj = {
             "text" : message,
-            "person": "admin",
+            "person": "user",
             "line": newLine
         };
         let newObj = {
@@ -119,7 +121,6 @@ const Chatbox = ({setChatClick}) => {
 
     const checkNameStatus = () => {
         let getName = localStorage.getItem("name");
-        getName.toLocaleLowerCase();
         if(getName){
             setNewName(false);
             setChatInputDisplay(true);
