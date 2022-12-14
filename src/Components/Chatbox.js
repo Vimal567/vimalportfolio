@@ -26,6 +26,7 @@ const Chatbox = ({setChatClick}) => {
         try{
             setLoading(true);
             let getName = localStorage.getItem("name");
+            getName.toLocaleLowerCase();
             const fetched = await axios.get("https://chat-box.onrender.com/" + getName);
             setUserData(fetched.data);
             setLoading(false);
@@ -52,6 +53,7 @@ const Chatbox = ({setChatClick}) => {
 
     const handleNameEntered = (event) => {
         const name = event.target.value;
+        name.toLocaleLowerCase();
         localStorage.setItem("name", name);
         setLocalName(name);
         setNewName(false);
@@ -117,6 +119,7 @@ const Chatbox = ({setChatClick}) => {
 
     const checkNameStatus = () => {
         let getName = localStorage.getItem("name");
+        getName.toLocaleLowerCase();
         if(getName){
             setNewName(false);
             setChatInputDisplay(true);
