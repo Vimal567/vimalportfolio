@@ -31,8 +31,6 @@ const Chatbox = ({setChatClick}) => {
             setLoading(false);
         }catch(error){
             console.log(error);
-            localStorage.clear();
-            handleClose();
         }
     }
 
@@ -55,7 +53,7 @@ const Chatbox = ({setChatClick}) => {
 
     const handleNameEntered = (event) => {
         const name = event.target.value;
-        name.toLocaleLowerCase();
+        name.toLowerCase();
         localStorage.setItem("name", name);
         setLocalName(name);
         setNewName(false);
