@@ -1,5 +1,5 @@
 #Education{
-    background: linear-gradient(to right,#3a1c71 , #d76d77,#ffaf7b);
+    background: linear-gradient(to right, #F6D285,#bbf3ce);
     min-height: 115vh;
 }
 #Educationheading{
@@ -9,7 +9,7 @@
     padding-bottom: 2rem;
 }
 .educontainer{
-    background: linear-gradient(to right,#371771 , #b54d58,#bf7d51);
+    background: linear-gradient(to right, #bd9d59,#66ad81);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,13 +18,11 @@
 }
 .edu-inner-container{
     padding: 2rem;
-    border: 0.35rem solid transparent;
-    border-image: linear-gradient(45deg, rgb(68, 0, 255) , rgb(212, 142, 62));
     border-image-slice: 1;
     border-style: outset;
     display: flex;
     flex-wrap: wrap;
-    background: linear-gradient(to right,rgb(196, 243, 243) , #efe0e1);
+    background: linear-gradient(to right,rgb(196, 243, 214) , #efe0e1);
     transform: translateZ(30px);
 }
 .edu-inner-container:hover{

@@ -1,5 +1,5 @@
 .work {
-  background: linear-gradient(to bottom, #000031, #00002c);
+  background: linear-gradient(to right, #7c7a09, #14c53a);
   min-height: 100vh;
 }
 .heading{
@@ -35,9 +35,7 @@
 .cardss{  
   transform-style: preserve-3d;
   transform: perspective(1000px);
-}
-.projectimage:hover{
-  cursor: pointer !important;
+  background-color: rgb(249, 255, 241);
 }
 .cardcontent{
   transform: translateZ(30px) scale(0.8);

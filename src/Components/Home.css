@@ -1,23 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 #Home{
-    background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+    background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
     min-height: 100vh;
-}
-#aboutbutton{
-    background-color: rgb(29, 29, 117);
-    text-align: center;
-    border-radius: 2rem;
-    box-shadow: 0px 6px 10px #8f80e2;
-}
-#arrow{
-    padding-left: 4px;
-}
-#arrow:hover{
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
-}
-#aboutbutton:hover{
-    transform: scale(1.1);
 }
 #homebio{
     display: flex;
@@ -41,6 +25,36 @@
     transform: perspective(1000px);
     background-color: inherit;
     border: none;
+}
+.greeting{
+    color: rgb(12, 75, 31);
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.heroname{
+    color:#ec8038;
+    font-size: 4rem;
+    font-weight: 700;
+    padding-left: 1rem;
+    font-family: 'Caveat', cursive;
+}
+#aboutbutton{
+    background-color: rgb(29, 29, 117);
+    text-align: center;
+    border-radius: 2rem;
+    box-shadow: 0px 6px 10px #8f80e2;
+}
+#arrow{
+    padding-left: 4px;
+}
+#arrow:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+#aboutbutton:hover{
+    transform: scale(1.1);
 }
 @media only screen and (width>=768px) {
     .home-container{
@@ -144,16 +158,4 @@
     100% {
         opacity: 0;
     }
-}
-#greeting{
-    letter-spacing: 0.1rem;
-    color: rgb(21, 35, 141);
-    font-size: 3rem;
-}
-.peace{
-    height: 4rem;
-}
-.heroname{
-    color:#f1cb4f;
-    font-size: 3rem;
 }

@@ -19,7 +19,7 @@
     transform: scale(1.2);
 }
 #name:hover{
-    color: red;
+    color: rgb(229, 255, 0);
     cursor: pointer;
 }
 .space{
@@ -34,7 +34,7 @@
     color: gray;
 }
 #navbg{
-    background-color: rgb(38, 38, 233);
+    background: rgba(9, 104, 83, 0.897);
 }
 @media screen and (width < 776px) {
     .space{

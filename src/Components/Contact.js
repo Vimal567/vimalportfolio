@@ -7,7 +7,7 @@ import Linkedin from "./images/contact/linkedin.png"
 import Geeks from "./images/contact/gfg.png"
 import heart from "./images/contact/heart.png"
 import SendIcon from '@mui/icons-material/Send';
-import Button from 'react-bootstrap/Button';
+import { Button } from "@mui/material"
 import Form from 'react-bootstrap/Form';
 import getin from "./images/contact/getin.jfif"
 import contact from "./images/contact/contact.png"
@@ -67,7 +67,7 @@ export default function Contact(){
                                     <Form.Label>Message</Form.Label><br />
                                     <textarea className="form-inputs" name="Message" placeholder="Hi!!"></textarea>
                                 </Form.Group>
-                                <Button className="send" variant="primary" type="submit">Send <SendIcon className="sendicon" />
+                                <Button variant="contained" color="success" className="send" type="submit">Send <SendIcon className="sendicon" />
                                 </Button>
                             </Form>
                         </Card.Body>

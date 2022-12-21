@@ -157,7 +157,9 @@ const Chatbox = ({setChatClick}) => {
                         <span className="Welcome-name-para">Welcome user, Enter you name to start the live chat.
                         I will try to reply you when I get connected.</span>
                         <input  className="name-input" placeholder="Type your name!" onChange={handleNameInput} />
-                        <Button variant="contained" value={nameInput} onClick={handleNameEntered}>Enter</Button >
+                        <Button variant="contained" color="warning" value={nameInput} onClick={handleNameEntered}>
+                            Enter
+                        </Button >
                     </div>:
                     <div className="chat-started">
                         <span className="welcome-message">
@@ -166,7 +168,7 @@ const Chatbox = ({setChatClick}) => {
                         <span title="refresh">
                             <RefreshIcon className="refresh-icon" onClick={handleRefreshClick} />
                         </span>
-                        {posted ? (loading ? <div className="loading"><CircularProgress />Loading messages</div> : 
+                        {posted ? (loading ? <div className="loading"><CircularProgress color="success" />Loading messages</div> : 
                         userData.message.map((item, index) => {
                             return <div key={index} className={item.person === "admin" ? "admin" : "user"}>
                                 <span className="person">
@@ -177,7 +179,8 @@ const Chatbox = ({setChatClick}) => {
                             </div>
                         })
                         ): <div className="loading">
-                                <CircularProgress />Creating user Chat, please be patient!<br />Sometimes it takes upto 1 to 2 minute.
+                                <CircularProgress color="success" />
+                                Creating user Chat, please be patient!<br />Sometimes it takes upto 1 to 2 minute.
                             </div>
                         }
                     </div>

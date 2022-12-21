@@ -1,6 +1,6 @@
 #Contact{
     min-height: 110vh;
-    background: linear-gradient(to right, #36d1dc, #5b86e5);
+    background: linear-gradient(to right, #3c99be, #1cec49);
 }
 .contact-heading{
     display: flex;
@@ -13,7 +13,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to right, #29a3ac, #3467d3);
+    background: linear-gradient(to right, #317e9c, #15af36);
     min-height: 73vh;
     max-width: 73rem;
     margin-bottom: 3rem;

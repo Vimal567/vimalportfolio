@@ -1,5 +1,3 @@
-import peace from "./images/peace.png"
-import finger from "./images/finger.png"
 import ArrowCircleDownIcon from '@mui/icons-material/ArrowCircleDown';
 import {Button} from "@mui/material"
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -20,7 +18,12 @@ export default function Home(){
           <div
                 className="animated animated-text"
               >
-                <span id='greeting'>Hi There,<br/> I'm </span><span className="heroname">Vimal<img alt="peace" src={peace} className="peace" /></span>
+                <span className='greeting'>
+                  Hi There,<br/> I'm 
+                </span>
+                <span className="heroname">
+                  Vimal
+                </span>
                 <br/>
                 <Box className="animated-info" >
                   <span className="animated-item ">Software Developer</span>
@@ -29,7 +32,9 @@ export default function Home(){
                 </Box>
               </div>
           <br/><br/>
-          <Button id="aboutbutton" variant="contained"><Link to="About" >About me<ArrowCircleDownIcon id="arrow" /></Link></Button><img alt="pointing" src={finger}/>
+          <Button id="aboutbutton" variant="contained">
+            <Link to="About" >About me<ArrowCircleDownIcon id="arrow" /></Link>
+          </Button>
           </div>
           <br/>
         </Col >

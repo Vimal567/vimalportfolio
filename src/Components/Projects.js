@@ -27,13 +27,13 @@ export default function Projects(){
                             perspective={2000}
                             transitionSpeed={1500}
                             >
-                        <Card className='cardss' style={{ width: '18rem' }}>
+                        <Card className='cardss'>
                             <img alt='projectimage' variant="top" src={XFlix} className="projectimage" />
                             <div className='cardtitle'>XFlix</div>
                             <div className='cardcontent' >
                                 A video platform which hosts videos for the world to watch and upload new Videos by external links.
                             </div>
-                            <div className='toolused'>React.Js | Material-UI | CSS3 | Netlify</div>
+                            <div className='toolused'>React.Js | NodeJs | Expressjs | MongoDb</div>
                             <Card.Body className='cardicons'>
                                 <span className='iconpointer' onClick={() => openInNewTab('https://xflix-vimal.netlify.app')}><button className='view-button'>View<OpenInNewIcon style={{ height: '1rem' }}/></button></span>
                                 <span className='iconpointer' onClick={() => openInNewTab('https://www.crio.do/learn/portfolio/vimalrock82/ME_BUILDOUT_XFLIX_REACT/')}><button className='details-button'>Details<DetailsIcon style={{ height: '1.3rem' }}/></button></span>
@@ -48,13 +48,13 @@ export default function Projects(){
                         perspective={2000}
                         transitionSpeed={1500}
                         >
-                        <Card className='cardss' style={{ width: '18rem' }}>
+                        <Card className='cardss'>
                             <img alt='projectimage' variant="top" src={Qkart} className="projectimage" />
                             <div className='cardtitle'>Qkart</div>
                             <div className='cardcontent' >
                                 An e-shopping website with variety of products to review and purchase like flipkart for loved customers.
                             </div>
-                            <div className='toolused'>React.Js | Material-UI | CSS3 | Netlify</div>
+                            <div className='toolused'>React.Js | NodeJs | Expressjs | MongoDb</div>
                             <Card.Body className='cardicons'>
                                 <span className='iconpointer' onClick={() => openInNewTab('https://qkart-frontend-vimal.netlify.app/')}><button className='view-button'>View<OpenInNewIcon style={{ height: '1rem' }}/></button></span>
                                 <span className='iconpointer' onClick={() => openInNewTab('https://www.crio.do/learn/portfolio/vimalrock82/ME_QKART_FRONTEND_V2/')}><button className='details-button'>Details<DetailsIcon style={{ height: '1.3rem' }}/></button></span>
@@ -71,7 +71,7 @@ export default function Projects(){
                         perspective={2000}
                         transitionSpeed={1500}
                         >
-                        <Card className='cardss' style={{ width: '18rem' }}>
+                        <Card className='cardss'>
                             <img alt='projectimage' variant="top" src={Xboard} className="projectimage" />
                             <div className='cardtitle'>Xboard</div>
                             <div className='cardcontent' >
@@ -92,7 +92,7 @@ export default function Projects(){
                         perspective={2000}
                         transitionSpeed={1500}
                         >
-                            <Card className='cardss' style={{ width: '18rem' }}>
+                            <Card className='cardss'>
                                 <img alt='projectimage' variant="top" src={Qtrip} className="projectimage" />
                                 <div className='cardtitle'>Qtrip</div>
                                 <div className='cardcontent' >
