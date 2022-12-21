@@ -136,6 +136,12 @@
     }
 }
 @media screen and (width<568px) {
+    #vimalbio{
+        text-align: justify;
+        margin-left: 2rem;
+    }
+}
+@media screen and (width<568px) {
     #paragraph{
         margin-left: 2rem;
         margin-top: 2rem;
