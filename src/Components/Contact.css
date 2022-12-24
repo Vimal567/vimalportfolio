@@ -40,7 +40,7 @@ textarea{
     width: 18rem;
 }
 .form-inputs{
-    box-shadow: inset 4px 4px 4px rgba(0,0,0,0.1),
+    box-shadow: inset 4px 4px 4px rgba(41, 201, 76, 0.425),
     inset -5px -5px 30px #fff;
 }
 .send{

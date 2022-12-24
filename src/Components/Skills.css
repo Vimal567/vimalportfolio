@@ -1,5 +1,6 @@
 #Skills {
   background: linear-gradient(to right, #20BF55, #053a6b);
+  padding-bottom: 4rem;
 }
 .skills h2 {
   color: #fff;
@@ -19,13 +20,13 @@
 }
 .skillscontainer{
   background: rgba(0, 0, 22, 0.4);
+  padding-top: 3rem;
 }
 .skillimage{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 3rem;
   padding-bottom: 3rem;
 }
 #imgsk{
@@ -37,7 +38,6 @@
   flex-wrap: wrap;
 }
 .iconcontainer{
-  padding-top: 3rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -56,7 +56,7 @@
 }
 .iconboxes:hover{
   transform: scale(1.1);
-  box-shadow: 0 8px 10px rgba(0, 2, 68, 0.8);
+  box-shadow: 0 8px 10px rgba(35, 9, 78, 0.8);
 }
 
 .skillicontext{
@@ -68,8 +68,8 @@
 
 @media only screen and (width>=992px) {
   .skills{
-    padding-left: 6rem !important;
-    padding-right: 6rem !important;
+    padding-left: 6rem;
+    padding-right: 6rem;
   }
 }
 
@@ -109,23 +109,6 @@
   .heading{
     padding-bottom: 4rem;
   }
-}
-@media only screen and (width<576px) {
-  #skills{
-      padding-top: 11vh;
-      padding-bottom: 2rem;
-  }
-}
-@media only screen and (width<=768px) {
-    #skills{
-        padding-top: 10vh;
-        padding-bottom: 16rem;
-    }
-}
-@media only screen and (width>=992px) {
-    #skills{
-        padding-bottom: 15vh;
-    }
 }
 @media only screen and (width<576px) {
   .iconcontainer{

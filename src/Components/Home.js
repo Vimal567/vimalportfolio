@@ -15,26 +15,24 @@ export default function Home(){
       <Row >
         <Col sm={12} md={6} lg={6} id="homebio">
           <div>
-          <div
-                className="animated animated-text"
-              >
-                <span className='greeting'>
-                  Hi There,<br/> I'm 
-                </span>
-                <span className="heroname">
-                  Vimal
-                </span>
-                <br/>
-                <Box className="animated-info" >
-                  <span className="animated-item ">Software Developer</span>
-                  <span className="animated-item ">Full Stack Developer</span>
-                  <span className="animated-item ">Web Developer</span>
-                </Box>
-              </div>
-          <br/><br/>
-          <Button id="aboutbutton" variant="contained">
-            <Link to="About" >About me<ArrowCircleDownIcon id="arrow" /></Link>
-          </Button>
+            <div className="animated animated-text">
+              <span className='greeting'>
+                Hi There,<br/> I'm 
+              </span>
+              <span className="heroname">
+                Vimal
+              </span>
+              <br/>
+              <Box className="animated-info" >
+                <span className="animated-item ">Software Developer</span>
+                <span className="animated-item ">Full Stack Developer</span>
+                <span className="animated-item ">Web Developer</span>
+              </Box>
+            </div>
+            <br/><br/>
+            <Button id="aboutbutton" variant="contained">
+              <Link to="About" >About me<ArrowCircleDownIcon id="arrow" /></Link>
+            </Button>
           </div>
           <br/>
         </Col >

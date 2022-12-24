@@ -22,7 +22,7 @@ import "./Skills.css"
 export default function Skills(){
     return(
         <div id="Skills">
-            <section className="skills" id="skills">
+            <section className="skills">
                 <h2 className="heading"><LaptopIcon className='laptop'/> Skills & <span> Abilities</span></h2>
                 <Container fluid="md" className="skillscontainer" >
                     <Row>

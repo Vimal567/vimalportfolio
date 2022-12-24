@@ -1,76 +1,122 @@
-
-import { Link } from 'react-scroll';
-import referlink from "./images/Education/refer.png"
-import collegelogo from "./images/Education/collegelogo.png"
-import rightarrow from "./images/Education/rightarrow.png"
-import criologo from "./images/Education/crio.png"
-import grad from "./images/Education/gradlogo.png"
-import { Container, Card } from "react-bootstrap";
 import "./Education.css"
+import Timeline from '@mui/lab/Timeline';
+import TimelineItem from '@mui/lab/TimelineItem';
+import TimelineSeparator from '@mui/lab/TimelineSeparator';
+import TimelineConnector from '@mui/lab/TimelineConnector';
+import TimelineContent from '@mui/lab/TimelineContent';
+import TimelineDot from '@mui/lab/TimelineDot';
+import VideoLibraryIcon from '@mui/icons-material/VideoLibrary';
+import HandshakeIcon from '@mui/icons-material/Handshake';
+import Typography from '@mui/material/Typography';
+import SchoolIcon from '@mui/icons-material/School';
+import LuggageIcon from '@mui/icons-material/Luggage';
+import FeedIcon from '@mui/icons-material/Feed';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
-export default function Education(){
-    const openInNewTab = (url) => {
-        const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
-        if (newWindow) newWindow.opener = null
-      }
-
-    return(
-        <div id="Education">
-            <div id="Educationheading"><img alt="icon" src={grad} id="eduicon" /><h2 id='abouttext'> Education </h2></div>
-            <Container  className="educontainer">
-                <Card className="edu-inner-container" style={{ width: '18rem' }} onClick={() => openInNewTab('https://www.crio.do/')}>
-                    <div className="edu-logo-container">
-                        <img alt="crio logo" src={criologo} className="criologo" />
-                    </div>
-                    <Card.Body className="edu-body">
-                        <div className="edu-body1">
-                        <h5>Crio.Do E-Learning Platform, Bengaluru</h5>
-                        <div>
-                            Software Development
-                        </div>
-                        <div>March 2022 - Present</div>
-                        </div>
-                    <hr/>
-                        <div>
-                            <div>
-                                <img alt="buttlet arrow" src={rightarrow} className="rightarrow" />
-                                Currently, I am doing a Learning Program as a Full Stack Developer.
-                            </div>
-                            <div>
-                                <img alt="buttlet arrow" src={rightarrow} className="rightarrow" />
-                                I have worked on multiple real-world projects using JavaScript along with React.Js <Link to="Projects" className='refericon'><img alt="refer" src={referlink} /></Link>
-                            </div>
-                        </div>
-                    </Card.Body>
-                </Card>
-                <br />
-                <Card className="edu-inner-container" style={{ width: '18rem' }} onClick={() => openInNewTab('https://www.nehruinstitute.com/')}>
-                    <div className="edu-logo-container">
-                        <img alt="crio logo" src={collegelogo} className="criologo" />
-                    </div>
-                    <Card.Body className="edu-body">
-                        <div className="edu-body1">
-                        <h5>Nehru Institute of Engineering and Technology, Coimbatore</h5>
-                        <div>
-                            BE Aeronautical Engineering
-                        </div>
-                        <div>2017 - 2021</div>
-                        </div>
-                    <hr/>
-                        <div>
-                            <div>
-                                <img alt="buttlet arrow" src={rightarrow} className="rightarrow" />
-                                I have studied some basic Aeronautical concepts.
-                            </div>
-                            <div>
-                                <img alt="buttlet arrow" src={rightarrow} className="rightarrow" />
-                                Like Aerodynamics, Propulsion, Aircraft Structures, etc. 
-                            </div>
-                        </div>
-                    </Card.Body>
-                </Card>
-            </Container>
-
-        </div>
-    )
+const Education = () => {
+  return (
+    <div id="Education">
+      <div className="education-heading"><h2>Experience & <span>Journey</span></h2></div>
+    <Timeline position="alternate" >
+      <TimelineItem>
+        <TimelineSeparator>
+        <TimelineConnector sx={{ bgcolor: 'error.main' }}/>
+          <TimelineDot color="error">
+            <VideoLibraryIcon />
+          </TimelineDot>
+          <TimelineConnector  sx={{ bgcolor: 'warning.main' }} />
+        </TimelineSeparator>
+        <TimelineContent sx={{ py: '12px', px: 2 }}>
+          <Typography variant="h6" component="span">
+            XFlix
+          </Typography>
+          <Typography>Watch and Upload videos</Typography>
+          <Typography color="text.secondary">Nov 2021</Typography>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineSeparator>
+          <TimelineConnector sx={{ bgcolor: 'warning.main' }} />
+          <TimelineDot color="warning">
+            <ShoppingCartIcon />
+          </TimelineDot>
+          <TimelineConnector sx={{ bgcolor: 'black' }} />
+        </TimelineSeparator>
+        <TimelineContent sx={{ py: '12px', px: 2 }}>
+          <Typography variant="h6" component="span">
+            QKart
+          </Typography>
+          <Typography>E-commerce website</Typography>
+          <Typography color="text.secondary">July 2021</Typography>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineSeparator>
+          <TimelineConnector sx={{ bgcolor: 'black' }} />
+          <TimelineDot sx={{ bgcolor: 'lightgray' }} variant="outlined">
+            <FeedIcon />
+          </TimelineDot>
+          <TimelineConnector sx={{ bgcolor: 'primary.main' }} />
+        </TimelineSeparator>
+        <TimelineContent sx={{ py: '12px', px: 2 }}>
+          <Typography variant="h6" component="span">
+            XBoard
+          </Typography>
+          <Typography>News Feed website</Typography>
+          <Typography color="text.secondary">June 2021</Typography>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineSeparator>
+          <TimelineConnector sx={{ bgcolor: 'primary.main' }} />
+          <TimelineDot color="primary">
+            <LuggageIcon />
+          </TimelineDot>
+          <TimelineConnector sx={{ bgcolor: 'success.main' }} />
+        </TimelineSeparator>
+        <TimelineContent sx={{ py: '12px', px: 2 }}>
+          <Typography variant="h6" component="span">
+            QTrip
+          </Typography>
+          <Typography>Travel booking website</Typography>
+          <Typography color="text.secondary">May 2021</Typography>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineSeparator>
+          <TimelineConnector sx={{ bgcolor: 'success.main' }} />
+          <TimelineDot color="success">
+            <HandshakeIcon />
+          </TimelineDot>
+          <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
+        </TimelineSeparator>
+        <TimelineContent sx={{ py: '12px', px: 2 }}>
+          <Typography variant="h6" component="span">
+            Crio
+          </Typography>
+          <Typography>Joined Crio's Software Development</Typography>
+          <Typography color="text.secondary">March 2021</Typography>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineSeparator>
+          <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
+          <TimelineDot color="secondary">
+            <SchoolIcon />
+          </TimelineDot>
+          <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
+        </TimelineSeparator>
+        <TimelineContent sx={{ py: '12px', px: 2 }}>
+          <Typography variant="h6" component="span">
+            Nehru College
+          </Typography>
+          <Typography>B.E Aeronautical Graduated</Typography>
+          <Typography color="text.secondary">April 2021</Typography>
+        </TimelineContent>
+      </TimelineItem>
+    </Timeline>
+    </div>
+  );
 }
+
+export default Education;
