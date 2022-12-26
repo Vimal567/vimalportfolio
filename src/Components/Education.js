@@ -31,7 +31,7 @@ const Education = () => {
             XFlix
           </Typography>
           <Typography>Watch and Upload videos</Typography>
-          <Typography color="text.secondary">Nov 2021</Typography>
+          <Typography color="text.secondary">Nov 2022</Typography>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
@@ -47,7 +47,7 @@ const Education = () => {
             QKart
           </Typography>
           <Typography>E-commerce website</Typography>
-          <Typography color="text.secondary">July 2021</Typography>
+          <Typography color="text.secondary">July 2022</Typography>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
@@ -63,7 +63,7 @@ const Education = () => {
             XBoard
           </Typography>
           <Typography>News Feed website</Typography>
-          <Typography color="text.secondary">June 2021</Typography>
+          <Typography color="text.secondary">June 2022</Typography>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
@@ -79,7 +79,7 @@ const Education = () => {
             QTrip
           </Typography>
           <Typography>Travel booking website</Typography>
-          <Typography color="text.secondary">May 2021</Typography>
+          <Typography color="text.secondary">May 2022</Typography>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
@@ -95,7 +95,7 @@ const Education = () => {
             Crio
           </Typography>
           <Typography>Joined Crio's Software Development</Typography>
-          <Typography color="text.secondary">March 2021</Typography>
+          <Typography color="text.secondary">March 2022</Typography>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
