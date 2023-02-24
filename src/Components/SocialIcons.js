@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import styled from "styled-components";
 import { SocialGithub, LinkedIn, Instagram, Facebook } from "./images/svgs";
-import './SocialIcons.css';
+import "./SocialIcons.css";
 
 const Icons = styled.div`
   display: flex;
@@ -17,7 +17,6 @@ const Icons = styled.div`
   & > *:not(:last-child) {
     margin: 0.8rem 0;
   }
-
 `;
 
 const Line = styled(motion.span)`
@@ -40,7 +39,7 @@ const SocialIcons = () => {
           href="https://github.com/Vimal567"
           rel="noreferrer"
         >
-          <SocialGithub width={22} height={22} className="icons"/>
+          <SocialGithub width={22} height={22} className="icons" />
         </a>
       </motion.div>
       <motion.div
@@ -54,7 +53,7 @@ const SocialIcons = () => {
           href="https://www.instagram.com/vimal_567/"
           rel="noreferrer"
         >
-          <Instagram width={22} height={22} className="icons"/>
+          <Instagram width={22} height={22} className="icons" />
         </a>
       </motion.div>
       <motion.div
@@ -68,7 +67,7 @@ const SocialIcons = () => {
           href="https://www.facebook.com/vimalrock82/"
           rel="noreferrer"
         >
-          <Facebook width={22} height={22} className="icons"/>
+          <Facebook width={22} height={22} className="icons" />
         </a>
       </motion.div>
       <motion.div
@@ -82,7 +81,7 @@ const SocialIcons = () => {
           href="https://www.linkedin.com/in/vimal-s/"
           rel="noreferrer"
         >
-          <LinkedIn width={22} height={22} className="icons"/>
+          <LinkedIn width={22} height={22} className="icons" />
         </a>
       </motion.div>
 

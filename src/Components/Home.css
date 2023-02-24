@@ -1,161 +1,178 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
-#Home{
-    background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
-    min-height: 100vh;
-}
-#homebio{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-#heroes{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.hero-container {
-    transform-style: preserve-3d;
-    transform: perspective(2000px);
-    padding-bottom: 1rem;
-}
-.hero-card{
-    transform-style: preserve-3d;
-    transform: perspective(1000px);
-    background-color: inherit;
-    border: none;
-}
-.greeting{
-    color: rgb(12, 75, 31);
-    font-size: 3rem;
-    font-weight: 500;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.heroname{
-    color:#ec8038;
-    font-size: 4rem;
-    font-weight: 700;
-    padding-left: 1rem;
-    font-family: 'Caveat', cursive;
-}
-#aboutbutton{
-    background-color: rgb(29, 29, 117);
-    text-align: center;
-    border-radius: 2rem;
-    box-shadow: 0px 6px 10px #8f80e2;
-}
-#arrow{
-    padding-left: 4px;
-}
-#arrow:hover{
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
-}
-#aboutbutton:hover{
-    transform: scale(1.1);
-}
-@media only screen and (width>=768px) {
-    .home-container{
-        margin-top: 4rem;
-    }
-}
-@media only screen and (width<576px) {
-    #Home{
-        padding-top: 11vh;
-        padding-bottom: 2rem;
-    }
-}
-@media only screen and (width>=768px) {
-    #Home{
-        padding-top: 18vh;
-        padding-bottom: 16rem;
-    }
-}
-@media only screen and (width>=992px) {
-    #Home{
-        padding-top: 18vh;
-    }
-}
-@media only screen and (width<576px) {
-    #homegrid{
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
 
-    }
+#Home {
+  background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+  min-height: 100vh;
 }
-@media only screen and (width>=768px) {
-    #homegrid{
-        padding-top: 8rem;
-        padding-bottom: 12rem;
-    }
+
+#homebio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.greeting {
+  color: rgb(12, 75, 31);
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  filter: drop-shadow(5px 5px 5px rgb(56, 56, 56, 0.7));
+}
+
+.heroname {
+  color: #ec8038;
+  font-size: 4rem;
+  font-weight: 700;
+  padding-left: 1rem;
+  font-family: "Caveat", cursive;
+  filter: drop-shadow(5px 5px 5px rgb(236, 128, 56, 0.7));
+}
+
+#aboutbutton {
+  background-color: rgb(29, 29, 117);
+  text-align: center;
+  border-radius: 2rem;
+  box-shadow: 0px 6px 10px #8f80e2;
+}
+
+#arrow {
+  padding-left: 4px;
+}
+
+#arrow:hover {
+  transform: scale(1.2);
+}
+
+#aboutbutton:hover {
+  transform: scale(1.1);
+}
+
+#heroes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-container {
+  transform-style: preserve-3d;
+  transform: perspective(2000px);
+  padding-bottom: 1rem;
+}
+
+.hero-card {
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  background-color: inherit;
+  border: none;
 }
 
 .animated {
-    position: relative;
+  position: relative;
 }
 
 .animated-info {
-    display: inline-block;
-    vertical-align: top;
-    min-width: 300px;
-    position: relative;
-    font-size: 2rem;
+  display: inline-block;
+  vertical-align: top;
+  min-width: 300px;
+  position: relative;
+  font-size: 2rem;
 }
 
 .animated-item {
-    color: #a73636;
-    line-height: inherit;
-    font-size: 2rem;
-    display: block;
-    opacity: 0;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    animation: BottomTotop 5s linear infinite 0s;
+  color: #a73636;
+  line-height: inherit;
+  font-size: 2rem;
+  display: block;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  filter: drop-shadow(5px 5px 5px rgb(193, 129, 103, 0.8));
+  top: 0;
+  right: 0;
+  left: 0;
+  animation: BottomTotop 5s linear infinite 0s;
 }
 
-.animated-item:nth-child(2n+2) {
-    animation-delay: 2s;
-}
-.animated-item:nth-child(3n+3) {
-    animation-delay: 3.5s;
+.animated-item:nth-child(2n + 2) {
+  animation-delay: 2s;
 }
 
+.animated-item:nth-child(3n + 3) {
+  animation-delay: 3.5s;
+}
 
 @keyframes BottomTotop {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    5% {
-        opacity: 0;
-        transform: translateY(5px);
-    }
+  5% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
 
-    10% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
+  10% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 
-    25% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
+  25% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 
-    30% {
-        opacity: 0;
-        transform: translateY(5px);
-    }
+  30% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
 
-    80% {
-        opacity: 0;
-    }
+  80% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 0;
-    }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media only screen and (width>=768px) {
+  .home-container {
+    margin-top: 4rem;
+  }
+}
+
+@media only screen and (width<576px) {
+  #Home {
+    padding-top: 11vh;
+    padding-bottom: 2rem;
+  }
+}
+
+@media only screen and (width>=768px) {
+  #Home {
+    padding-top: 18vh;
+    padding-bottom: 16rem;
+  }
+}
+
+@media only screen and (width>=992px) {
+  #Home {
+    padding-top: 18vh;
+  }
+}
+
+@media only screen and (width<576px) {
+  #homegrid {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media only screen and (width>=768px) {
+  #homegrid {
+    padding-top: 8rem;
+    padding-bottom: 12rem;
+  }
 }

@@ -2,47 +2,55 @@
   background: linear-gradient(to right, #7c7a09, #14c53a);
   min-height: 100vh;
 }
-.heading{
+
+.heading {
   color: #fff;
   padding-top: 11vh;
 }
+
 .work .heading span {
   color: rgb(255, 230, 0);
   padding-left: 0.7rem;
 }
-.heading{
+
+.heading {
   display: flex;
   justify-content: center;
 }
 
-.codeicon{
+.codeicon {
   width: 3% !important;
   height: 3% !important;
-} 
-.project-column{
+}
+
+.project-column {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+
 .projectboxes {
   transform-style: preserve-3d;
   transform: perspective(2000px);
   padding-bottom: 1rem;
   width: 18rem;
 }
-.cardss{  
+
+.cardss {
   transform-style: preserve-3d;
   transform: perspective(1000px);
   background-color: rgb(249, 255, 241);
 }
-.cardcontent{
+
+.cardcontent {
   transform: translateZ(30px) scale(0.8);
   width: 80%;
   margin-left: 10%;
 }
-.cardtitle{
+
+.cardtitle {
   display: flex;
   justify-content: center;
   font-size: x-large;
@@ -51,44 +59,51 @@
   width: 70%;
   margin-left: 10%;
 }
-.toolused{
+
+.toolused {
   font-size: 1rem;
   display: flex;
   justify-content: center;
   color: gray;
   transform: translateZ(8px) scale(0.8);
 }
-.cardicons{
+
+.cardicons {
   display: flex;
   justify-content: space-around;
   transform: translateZ(40px) scale(0.8);
 }
-.view-button{
-  background-image: linear-gradient(to right, #09C6F9,#045DE9);
+
+.view-button {
+  background-image: linear-gradient(to right, #09c6f9, #045de9);
   border: none;
   width: 6rem;
   height: 2rem;
   border-radius: 1rem;
 }
-.details-button{
-  background-image: linear-gradient(to right, #ce4421,#e69540);
+
+.details-button {
+  background-image: linear-gradient(to right, #ce4421, #e69540);
   border: none;
   width: 6rem;
   height: 2rem;
   border-radius: 1rem;
 }
-.iconpointer:hover{
+
+.iconpointer:hover {
   cursor: pointer;
 }
+
 @media screen and (width<568px) {
-  .codeicon{
-      width: 2rem !important ;
-      height: 2rem !important;
-      margin-right: 1rem;
+  .codeicon {
+    width: 2rem !important ;
+    height: 2rem !important;
+    margin-right: 1rem;
   }
 }
+
 @media screen and (width<568px) {
-  .heading{
-      margin-right: 2 rem;
+  .heading {
+    margin-right: 2 rem;
   }
 }

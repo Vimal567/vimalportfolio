@@ -1,48 +1,56 @@
 #Skills {
-  background: linear-gradient(to right, #20BF55, #053a6b);
+  background: linear-gradient(to right, #20bf55, #053a6b);
   padding-bottom: 4rem;
 }
+
 .skills h2 {
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .skills .heading span {
   color: rgb(255, 230, 0);
   margin-left: 1rem;
 }
 
-.laptop{
+.laptop {
   padding-right: 1rem;
   width: 3%;
   height: 3%;
 }
-.skillscontainer{
+
+.skillscontainer {
   background: rgba(0, 0, 22, 0.4);
   padding-top: 3rem;
 }
-.skillimage{
+
+.skillimage {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-bottom: 3rem;
 }
-#imgsk{
+
+#imgsk {
   border-radius: 1.5rem;
 }
-.skillicons{
+
+.skillicons {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.iconcontainer{
+
+.iconcontainer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.iconboxes{
+
+.iconboxes {
   background-color: black;
   margin-left: 2rem;
   margin-top: 2rem;
@@ -54,12 +62,13 @@
   align-items: center;
   border-radius: 0.4rem;
 }
-.iconboxes:hover{
+
+.iconboxes:hover {
   transform: scale(1.1);
   box-shadow: 0 8px 10px rgba(35, 9, 78, 0.8);
 }
 
-.skillicontext{
+.skillicontext {
   color: white;
   display: flex;
   justify-content: center;
@@ -67,51 +76,56 @@
 }
 
 @media only screen and (width>=992px) {
-  .skills{
+  .skills {
     padding-left: 6rem;
     padding-right: 6rem;
   }
 }
 
 @media only screen and (width<576px) {
-  .laptop{
+  .laptop {
     padding-right: 1rem;
     width: 12% !important;
     height: 12% !important;
   }
 }
+
 @media only screen and (width>=576px) {
-  .laptop{
+  .laptop {
     padding-right: 1rem;
     width: 8% !important;
     height: 8% !important;
   }
-  #imgsk{
+
+  #imgsk {
     height: 35rem;
     border-radius: 1.5rem;
   }
 }
+
 @media only screen and (width>=768px) {
-  .laptop{
+  .laptop {
     padding-right: 1rem;
     width: 6% !important;
     height: 6% !important;
   }
 }
+
 @media only screen and (width>=992px) {
-  .laptop{
+  .laptop {
     padding-right: 1rem;
     width: 6% !important;
     height: 6% !important;
   }
 }
+
 @media only screen and (width<576px) {
-  .heading{
+  .heading {
     padding-bottom: 4rem;
   }
 }
 @media only screen and (width<576px) {
-  .iconcontainer{
+  .iconcontainer {
     margin-left: 3rem;
     padding-bottom: 3rem;
   }

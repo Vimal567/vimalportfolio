@@ -1,43 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Style+Script&display=swap");
 
-.header{
-    width: 100vw;
+.header {
+  width: 100vw;
 }
-#brand{
-    margin-right: 20px;
+
+#brand {
+  margin-right: 20px;
 }
-#name{
-    font-family: 'Style Script', cursive;
-    font-size: x-large;
+
+#name {
+  font-family: "Style Script", cursive;
+  font-size: x-large;
 }
-.navheading{
-    color: white;
+
+.navheading {
+  color: white;
 }
-.navheading:hover{
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
+
+.navheading:hover {
+  transform: scale(1.2);
 }
-#name:hover{
-    color: rgb(229, 255, 0);
-    cursor: pointer;
+
+#name:hover {
+  color: rgb(229, 255, 0);
+  cursor: pointer;
 }
-.space{
-    padding-right: 20px;
-    color: white;
-    font-weight: 400;
-    font-size: large;
-    text-decoration: none;
+
+.space {
+  padding-right: 20px;
+  color: white;
+  font-weight: 400;
+  font-size: large;
+  text-decoration: none;
 }
-.space:hover{
-    cursor: pointer;
-    color: gray;
+
+.space:hover {
+  cursor: pointer;
+  color: gray;
 }
-#navbg{
-    background: rgba(9, 104, 83, 0.897);
+
+#navbg {
+  background: rgba(9, 104, 83, 0.897);
 }
+
 @media screen and (width < 776px) {
-    .space{
-        padding-top: 5px;
-    }
+  .space {
+    padding-top: 5px;
+  }
 }

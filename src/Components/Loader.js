@@ -11,10 +11,9 @@ const defaultOptions1 = {
   },
 };
 
-
 function Loader() {
   return (
-    <Box height={"100vh"} >
+    <Box height={"100vh"}>
       <Stack
         direction="column"
         justifyContent="center"

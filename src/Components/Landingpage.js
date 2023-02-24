@@ -26,7 +26,9 @@ const Landingpage = () => {
 
     return(
         <>
-            {loading ? <Loader />:
+            {loading ? (
+                <Loader />
+            ) : (
             <div>
                 <div className="pc-device">
                     <SocialIcons />
@@ -46,7 +48,7 @@ const Landingpage = () => {
                 <Education />
                 <Contact />
             </div>
-        }
+        )}
         </>
     )
 }

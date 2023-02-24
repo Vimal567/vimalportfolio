@@ -1,153 +1,179 @@
-#About{
-    background: linear-gradient(to right, #eef8f7, #ceecdf);
+#About {
+  background: linear-gradient(to right, #eef8f7, #ceecdf);
 }
-#aboutHeading{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    font-size: xx-large;
-}
-#aboutperson{
-    width: 3%;
-    height: 3%;
-}
-#abouttext{
-    margin-left: 1rem;
-}
-.about-me{
-    color:rgb(153, 0, 255);
-}
-#aboutcontainer{
-    padding-top: 3rem;
-}
-#vimalpic{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.imgpic{
-    border-radius: 0.5rem;
-    box-shadow: 0px 8px 15px #60cc92;
-    border-style: outset;
-    border-width: thick;
-    filter: grayscale(0%);
-    -webkit-filter: grayscale(0%);
-    -moz-filter: grayscale(0%);
-}
-.imgpic:hover{
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-}
-.tilt-container {
-    transform-style: preserve-3d;
-    transform: perspective(2000px);
-    padding-bottom: 1rem;
-}
-.tilt-card{
-    transform-style: preserve-3d;
-    transform: perspective(1000px);
-    background-color: inherit;
-    border: none;
-}
-#vimalbio{
-    display: flex;
-    flex-direction: column;
-    text-align: justify;
-}
-#paragraph{
-    color: black;
-    font-weight: 400;
 
+#aboutHeading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: xx-large;
 }
-.firstname{
-    font-weight: bold;
-    font-size: xx-large;
+
+#aboutperson {
+  width: 3%;
+  height: 3%;
 }
-.occupation{
-    font-weight: bold;
+
+#abouttext {
+  margin-left: 1rem;
 }
-.in{
-    color: rgb(162, 185, 44);
+
+.about-me {
+  color: rgb(153, 0, 255);
 }
-.aboutage{
-    padding-right: 8rem;
+
+#aboutcontainer {
+  padding-top: 3rem;
 }
-.aboutphone{
-    padding-right: 0.7rem;
+
+#vimalpic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.detailcolor{
-    color:blue;
+
+.imgpic {
+  border-radius: 0.5rem;
+  box-shadow: 0px 8px 15px #60cc92;
+  border-style: outset;
+  border-width: thick;
+  filter: grayscale(0%);
 }
-#resumebutton{
-    background-color: rgb(29, 29, 117);
-    box-shadow: 0px 6px 10px #8f80e2;
-    width: 20%;
-    display: flex;
-    justify-content: center;
+
+.imgpic:hover {
+  filter: grayscale(100%);
 }
-#resumelink{
-    text-decoration: none;
-    color: white;
+
+.tilt-container {
+  transform-style: preserve-3d;
+  transform: perspective(2000px);
+  padding-bottom: 1rem;
 }
-#resumebutton:hover{
-    box-shadow: 3px 8px 10px #8f80e2;
-    transform: scale(1.1);
+
+.tilt-card {
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  background-color: inherit;
+  border: none;
 }
-#downloadbutton:hover{
-    display: flex;
-    justify-content: center;
-    padding-left: 0.1rem;
-    transition: 0.1s ease-in;
+
+#vimalbio {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
 }
+
+#paragraph {
+  color: black;
+  font-weight: 400;
+}
+
+.firstname {
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.occupation {
+  font-weight: bold;
+}
+
+.in {
+  color: rgb(162, 185, 44);
+}
+
+.aboutage {
+  padding-right: 8rem;
+}
+
+.aboutphone {
+  padding-right: 0.7rem;
+}
+
+.detailcolor {
+  color: blue;
+}
+
+#resumebutton {
+  background-color: rgb(29, 29, 117);
+  box-shadow: 0px 6px 10px #8f80e2;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+#resumelink {
+  text-decoration: none;
+  color: white;
+}
+
+#resumebutton:hover {
+  box-shadow: 3px 8px 10px #8f80e2;
+  transform: scale(1.1);
+}
+
+#downloadbutton:hover {
+  display: flex;
+  justify-content: center;
+  padding-left: 0.1rem;
+  transition: 0.1s ease-in;
+}
+
 @media only screen and (width<576px) {
-    #aboutperson{
-        width: 8%;
-        height: 8%;
-    }
+  #aboutperson {
+    width: 8%;
+    height: 8%;
+  }
 }
+
 @media only screen and (width<576px) {
-    .aboutage{
-        display: block;
-    }
+  .aboutage {
+    display: block;
+  }
 }
+
 @media only screen and (width<576px) {
-    .aboutphone{
-        display: block;
-    }
+  .aboutphone {
+    display: block;
+  }
 }
+
 @media only screen and (width<576px) {
-    #About{
-        padding-top: 11vh;
-        padding-bottom: 2rem;
-    }
+  #About {
+    padding-top: 11vh;
+    padding-bottom: 2rem;
+  }
 }
+
 @media only screen and (width>=768px) {
-    #About{
-        padding-top: 10vh;
-        padding-bottom: 16rem;
-    }
+  #About {
+    padding-top: 10vh;
+    padding-bottom: 16rem;
+  }
 }
+
 @media only screen and (width>=992px) {
-    #About{
-        padding-top: 10vh;
-    }
+  #About {
+    padding-top: 10vh;
+  }
 }
+
 @media screen and (width<568px) {
-    #vimalbio{
-        padding-right: 2rem;
-    }
+  #vimalbio {
+    padding-right: 2rem;
+  }
 }
+
 @media screen and (width<568px) {
-    #paragraph{
-        margin-left: 2rem;
-        margin-top: 2rem;
-    }
+  #paragraph {
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
 }
+
 @media only screen and (width<576px) {
-    #resumebutton{
-        width: 40%;
-    }
+  #resumebutton {
+    width: 40%;
+  }
 }

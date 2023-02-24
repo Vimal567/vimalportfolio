@@ -1,16 +1,16 @@
 .icons {
-    fill:rgb(10, 80, 22);
-    opacity: 0.7;
-    transition: 0.1s linear;
+  fill: rgb(10, 80, 22);
+  opacity: 0.7;
+  transition: 0.1s linear;
 }
 
 .icons:hover {
-    fill: #f0ec0d;
-    transform: scale(1.3)!important;
+  fill: #f0ec0d;
+  transform: scale(1.3) !important;
 }
 
-@media screen and (width <769px){
-    #testicon{
-        display: none;
-    }
+@media screen and (width <769px) {
+  #testicon {
+    display: none;
+  }
 }
