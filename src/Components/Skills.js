@@ -15,7 +15,8 @@ import nodejs from "./images/skills/nodejs.png";
 import mongodb from "./images/skills/mongodb.png";
 import expressjs from "./images/skills/expressjs.png";
 import skillimg from "./images/skills/skill.jpg";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container} from "react-bootstrap";
+import Grid from '@mui/material/Grid';
 import LaptopIcon from "@mui/icons-material/Laptop";
 import "./Skills.css";
 
@@ -27,13 +28,11 @@ export default function Skills() {
           <LaptopIcon className="laptop" /> Skills & <span> Abilities</span>
         </h2>
         <Container fluid="md" className="skillscontainer">
-          <Row>
-            <Col sm={12} md={12} lg={6} className="skillimage">
+          <Grid container spacing={2}>
+            <Grid item sm={12} md={12} lg={6} className="skillimage">
               <img alt="skillimage" src={skillimg} id="imgsk" />
-            </Col>
-            <Col sm={12} md={12} lg={6} className="skillicons">
-              <Row>
-                <Container className="bar">
+            </Grid>
+            <Grid item sm={12} md={12} lg={6} className="skillicons">
                   <div className="iconcontainer">
                     <div className="iconboxes">
                       <img alt="html" src={html} />
@@ -101,10 +100,8 @@ export default function Skills() {
                       <span className="skillicontext">Python</span>
                     </div>
                   </div>
-                </Container>
-              </Row>
-            </Col>
-          </Row>
+            </Grid>
+          </Grid>
         </Container>
       </section>
     </div>
