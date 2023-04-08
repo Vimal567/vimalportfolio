@@ -22,7 +22,7 @@ export default function Header(){
             <Link to="About" className='space'>About</Link>
             <Link to="Skills" className='space'>Skills</Link>
             <Link to="Projects" className='space'>Projects</Link>
-            <Link to="Education" className='space'>Education</Link>
+            <Link to="Experience" className='space'>Experience</Link>
             <Link to="Contact" className='space'>Contact</Link>
           </Nav>
           </Navbar.Collapse>

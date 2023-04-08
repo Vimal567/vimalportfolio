@@ -1,16 +1,16 @@
 import html from "./images/skills/html.png";
 import css from "./images/skills/css.png";
 import javascript from "./images/skills/javascript.png";
+import typescript from "./images/skills/typescript.png"
+import angular from "./images/skills/angular.png";
 import react from "./images/skills/react.png";
 import bootstrap from "./images/skills/bootsrtap.png";
 import materialui from "./images/skills/materialui.png";
 import github from "./images/skills/github.png";
 import restapi from "./images/skills/rest.png";
-import responsive from "./images/skills/responsive.png";
 import heroku from "./images/skills/heroku.png";
 import netlify from "./images/skills/netlify.png";
 import cpp from "./images/skills/cpp.png";
-import python from "./images/skills/python.png";
 import nodejs from "./images/skills/nodejs.png";
 import mongodb from "./images/skills/mongodb.png";
 import expressjs from "./images/skills/expressjs.png";
@@ -47,6 +47,14 @@ export default function Skills() {
                       <span className="skillicontext">JavaScript</span>
                     </div>
                     <div className="iconboxes">
+                      <img alt="javascript" src={typescript} />
+                      <span className="skillicontext">TyepScript</span>
+                    </div>
+                    <div className="iconboxes">
+                      <img alt="React" src={angular} />
+                      <span className="skillicontext">Angular</span>
+                    </div>
+                    <div className="iconboxes">
                       <img alt="React" src={react} />
                       <span className="skillicontext">React</span>
                     </div>
@@ -65,11 +73,6 @@ export default function Skills() {
                     <div className="iconboxes">
                       <img alt="Rest api" src={restapi} />
                       <span className="skillicontext">Rest Api</span>
-                    </div>
-                    <div className="iconboxes">
-                      <img alt="Responsive design" src={responsive} />
-                      <span className="skillicontext">Responsive</span>
-                      <span className="skillicontext"> Design</span>
                     </div>
                     <div className="iconboxes">
                       <img alt="heroku" src={heroku} />
@@ -94,10 +97,6 @@ export default function Skills() {
                     <div className="iconboxes">
                       <img alt="C++" src={cpp} />
                       <span className="skillicontext">C++</span>
-                    </div>
-                    <div className="iconboxes">
-                      <img alt="python" src={python} />
-                      <span className="skillicontext">Python</span>
                     </div>
                   </div>
             </Grid>

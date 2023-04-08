@@ -23,7 +23,7 @@ export default function Home() {
                 <span className="heroname">Vimal</span>
                 <br />
                 <Box className="animated-info">
-                  <span className="animated-item ">Software Developer</span>
+                  <span className="animated-item ">Software Engineer</span>
                   <span className="animated-item ">Full Stack Developer</span>
                   <span className="animated-item ">Web Developer</span>
                 </Box>

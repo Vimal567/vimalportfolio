@@ -137,7 +137,7 @@ export default function Contact() {
           className="codewebicon"
         />
         <img
-          onClick={() => openInNewTab("https://www.hackerrank.com/vimalrock82")}
+          onClick={() => openInNewTab("https://leetcode.com/vimalrock82")}
           alt="coding website icons"
           src={leetcode}
           className="codewebicon"

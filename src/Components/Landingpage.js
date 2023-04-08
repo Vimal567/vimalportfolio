@@ -8,7 +8,7 @@ import Chatbox from './Chatbox';
 import About from './About';
 import Skills from "./Skills"
 import Projects from './Projects';
-import Education from "./Education"
+import Experience from "./Experience";
 import Contact from './Contact';
 import Fab from '@mui/material/Fab';
 import ChatIcon from '@mui/icons-material/Chat';
@@ -45,7 +45,7 @@ const Landingpage = () => {
                 <About />
                 <Skills />
                 <Projects />
-                <Education />
+                <Experience />
                 <Contact />
             </div>
         )}

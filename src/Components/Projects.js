@@ -3,8 +3,8 @@ import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import CodeIcon from "@mui/icons-material/Code";
 import Tilt from "react-parallax-tilt";
 import { Card, Container, Row, Col } from "react-bootstrap";
+import Banking from "./images/projects/Banking.png"
 import Qkart from "./images/projects/Qkart.png";
-import Xboard from "./images/projects/Xboard.png";
 import Qtrip from "./images/projects/Qtrip.png";
 import XFlix from "./images/projects/XFlix.png";
 import "./Projects.css";
@@ -25,6 +25,58 @@ export default function Projects() {
         </h2>
         <Container className="projectcontainer">
           <Row className="project-row">
+            <Col xs={12} sm={6} md={6} className="project-column">
+              <Tilt
+                className="projectboxes"
+                tiltMaxAngleX={20}
+                tiltMaxAngleY={10}
+                perspective={2000}
+                transitionSpeed={1500}
+              >
+                <Card className="cardss">
+                  <img
+                    alt="projectimage"
+                    variant="top"
+                    src={Banking}
+                    className="projectimage"
+                  />
+                  <div className="cardtitle">Banking System</div>
+                  <div className="cardcontent">
+                    A banking in which we can transfer amount between users and
+                    view list of transactions made.
+                  </div>
+                  <div className="toolused">
+                    React.Js | NodeJs | Expressjs | MongoDb
+                  </div>
+                  <Card.Body className="cardicons">
+                    <span
+                      className="iconpointer"
+                      onClick={() =>
+                        openInNewTab("https://vimal-basic-banking-system.netlify.app")
+                      }
+                    >
+                      <button className="view-button">
+                        View
+                        <OpenInNewIcon style={{ height: "1rem" }} />
+                      </button>
+                    </span>
+                    <span
+                      className="iconpointer"
+                      onClick={() =>
+                        openInNewTab(
+                          "https://www.crio.do/learn/portfolio/vimalrock82/ME_BUILDOUT_XFLIX_REACT/"
+                        )
+                      }
+                    >
+                      <button className="details-button">
+                        Details
+                        <DetailsIcon style={{ height: "1.3rem" }} />
+                      </button>
+                    </span>
+                  </Card.Body>
+                </Card>
+              </Tilt>
+            </Col>
             <Col xs={12} sm={6} md={6} className="project-column">
               <Tilt
                 className="projectboxes"
@@ -77,6 +129,8 @@ export default function Projects() {
                 </Card>
               </Tilt>
             </Col>
+          </Row>
+          <Row className="project-row">
             <Col xs={12} sm={6} md={6} className="project-column">
               <Tilt
                 className="projectboxes"
@@ -119,62 +173,6 @@ export default function Projects() {
                       onClick={() =>
                         openInNewTab(
                           "https://www.crio.do/learn/portfolio/vimalrock82/ME_QKART_FRONTEND_V2/"
-                        )
-                      }
-                    >
-                      <button className="details-button">
-                        Details
-                        <DetailsIcon style={{ height: "1.3rem" }} />
-                      </button>
-                    </span>
-                  </Card.Body>
-                </Card>
-              </Tilt>
-            </Col>
-          </Row>
-          <Row className="project-row">
-            <Col xs={12} sm={6} md={6} className="project-column">
-              <Tilt
-                className="projectboxes"
-                tiltMaxAngleX={20}
-                tiltMaxAngleY={10}
-                perspective={2000}
-                transitionSpeed={1500}
-              >
-                <Card className="cardss">
-                  <img
-                    alt="projectimage"
-                    variant="top"
-                    src={Xboard}
-                    className="projectimage"
-                  />
-                  <div className="cardtitle">Xboard</div>
-                  <div className="cardcontent">
-                    A news feed website that features the latest news for
-                    selective topics, from RSS feed of Flipboard.
-                  </div>
-                  <div className="toolused">
-                    HTML5 | CSS3 | BootStrap | JavaScript
-                  </div>
-                  <Card.Body className="cardicons">
-                    <span
-                      className="iconpointer"
-                      onClick={() =>
-                        openInNewTab(
-                          "https://vimal-crio-news-feed.netlify.app/"
-                        )
-                      }
-                    >
-                      <button className="view-button">
-                        View
-                        <OpenInNewIcon style={{ height: "1rem" }} />
-                      </button>
-                    </span>
-                    <span
-                      className="iconpointer"
-                      onClick={() =>
-                        openInNewTab(
-                          "https://www.crio.do/learn/portfolio/vimalrock82/ME_BUILDOUT_XBOARD/"
                         )
                       }
                     >

@@ -40,31 +40,32 @@ export default function About() {
             <div id="paragraph">
               <div className="firstname">I'm Vimal</div>
               <div className="occupation">
-                I'm into Full stack Software development
+                SOFTWARE ENGINEER || MEAN || MERN
               </div>
               <br />
               <div>
-                Hello, I'm a 2021 graduate engineer raising into Software
-                development. I always look towards obtaining a challenging and
-                competitive environment where I can apply my technical and
+                Hello, I'm a Full Stack Developer who's expertise in both MEAN
+                and MERN Stack. I always look towards obtaining a challenging
+                and competitive environment where I can apply my technical and
                 analytical skills to gain valuable insights and experience in
                 the varied areas of my interest. I've worked on{" "}
                 <span className="in">HTML</span>,
                 <span className="in"> CSS</span>,
-                <span className="in"> Javascript</span>,
+                <span className="in"> JavaScript</span>,
+                <span className="in"> TypeScript</span>,
+                <span className="in"> Angular</span>,
                 <span className="in"> Bootstrap</span>,
                 <span className="in"> ReactJs</span>,
                 <span className="in"> NodeJs</span> ,
                 <span className="in"> ExpressJs</span>,
-                <span className="in"> Mongo DB</span> and also completed some
-                Industrial Graded projects on Full stack development. Apart from
-                that I'm also trying to become a competitive coder by enhancing
-                my DSA knowledge in C++ .
+                <span className="in"> Mongo DB</span>. Apart from that I also
+                try to solve more DSA problems during my free time to enhance my
+                problem solving skills.
               </div>
               <br />
               <div>
                 <span className="aboutage">
-                  <span className="detailcolor">Age:</span> 23
+                  <span className="detailcolor">Age:</span> 24
                 </span>
                 <span>
                   <span>
