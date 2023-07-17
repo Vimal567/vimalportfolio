@@ -74,12 +74,9 @@ export default function About() {
                   vimalrock82@gmail.com
                 </span>
                 <br />
-                <span className="aboutphone">
-                  <span className="detailcolor">Phone:</span> +91 9443707551
-                </span>
                 <span>
                   <span className="detailcolor">Place:</span> Trichy, Tamilnadu,
-                  India - 62001
+                  India - 620001
                 </span>
               </div>
               <br />

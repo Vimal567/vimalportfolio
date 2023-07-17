@@ -8,8 +8,8 @@ import bootstrap from "./images/skills/bootsrtap.png";
 import materialui from "./images/skills/materialui.png";
 import github from "./images/skills/github.png";
 import restapi from "./images/skills/rest.png";
-import heroku from "./images/skills/heroku.png";
-import netlify from "./images/skills/netlify.png";
+import jira from "./images/skills/jira.png";
+import sourcetree from "./images/skills/sourcetree.png";
 import cpp from "./images/skills/cpp.png";
 import nodejs from "./images/skills/nodejs.png";
 import mongodb from "./images/skills/mongodb.png";
@@ -75,12 +75,12 @@ export default function Skills() {
                       <span className="skillicontext">Rest Api</span>
                     </div>
                     <div className="iconboxes">
-                      <img alt="heroku" src={heroku} />
-                      <span className="skillicontext">Heroku</span>
+                      <img alt="jira" src={jira} />
+                      <span className="skillicontext">jira</span>
                     </div>
                     <div className="iconboxes">
-                      <img alt="netlify" src={netlify} />
-                      <span className="skillicontext">Netlify</span>
+                      <img alt="sourcetree" src={sourcetree} />
+                      <span className="skillicontext">Sourcetree</span>
                     </div>
                     <div className="iconboxes">
                       <img alt="node js" src={nodejs} />
