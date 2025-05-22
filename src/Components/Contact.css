@@ -1,5 +1,5 @@
 #Contact {
-  min-height: 110vh;
+  min-height: 80vh;
   background: linear-gradient(to right, #3c99be, #1cec49);
 }
 
@@ -16,7 +16,6 @@
   justify-content: center;
   align-items: center;
   background: linear-gradient(to right, #317e9c, #15af36);
-  min-height: 73vh;
   max-width: 73rem;
   margin-bottom: 3rem;
 }
@@ -28,7 +27,7 @@
 }
 
 .contact-card {
-  height: 75vh;
+  height: 32rem;
   padding: 1.5rem;
   margin-top: 2rem;
   margin-bottom: 2rem;

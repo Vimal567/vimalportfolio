@@ -6,6 +6,9 @@
 .heading {
   color: #fff;
   padding-top: 11vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .work .heading span {
@@ -97,7 +100,7 @@
 
 @media screen and (width<568px) {
   .codeicon {
-    width: 2rem !important ;
+    width: 2rem !important;
     height: 2rem !important;
     margin-right: 1rem;
   }

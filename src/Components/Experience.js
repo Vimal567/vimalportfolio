@@ -30,7 +30,7 @@ const Experience = () => {
               Innbuilt Technologies
             </Typography>
             <Typography>Software Engineer</Typography>
-            <Typography color="text.secondary">March 2023 - Present</Typography>
+            <Typography color="text.secondary">March 2023 - February 2025</Typography>
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
