@@ -7,7 +7,7 @@ import { Button } from "@mui/material";
 import vimalLogo from "./images/chat/vimal.jpg";
 import io from "socket.io-client";
 
-const ENDPOINT = "http://localhost:8000";
+const ENDPOINT = "https://chat-box.onrender.com/";
 
 const Chatbox = ({ setChatClick }) => {
 
@@ -113,7 +113,7 @@ const Chatbox = ({ setChatClick }) => {
             </div>
 
             {joinedChat ? <div className="users-online">
-                <strong>Online Users:</strong> <span className="users">{users.length ? users.join(", ") : username}</span>
+                <strong>Online Users:</strong> <span className="users">{username}{users.find(user => user.username === "admin") ? ", Admin" : null }</span>
             </div> : null}
 
             {/* Chat Body */}
