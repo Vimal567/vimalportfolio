@@ -1,132 +1,98 @@
 import "./Chatbox.css";
 import { useState, useEffect, useRef } from "react";
-import axios from "axios";
 import { GiDevilMask } from "react-icons/gi";
 import { AiOutlineUser } from "react-icons/ai";
-import RefreshIcon from '@mui/icons-material/Refresh';
-import CircularProgress from "@mui/material/CircularProgress";
-import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import LogoutIcon from '@mui/icons-material/Logout';
 import { Button } from "@mui/material";
 import vimalLogo from "./images/chat/vimal.jpg";
+import io from "socket.io-client";
 
-const Chatbox = ({setChatClick}) => {
+const ENDPOINT = "http://localhost:8000";
 
-    const [newName, setNewName] = useState(true);
-    const [userData, setUserData] = useState([]);
-    const [chatInputDisplay, setChatInputDisplay] = useState(false);
-    const [nameInput, setNameInput] = useState("");
-    const [localName, setLocalName] = useState("");
+const Chatbox = ({ setChatClick }) => {
+
+    const [username, setUsername] = useState("");
+    const [loading, setLoading] = useState(false);
+    const [joinedChat, setJoinedChat] = useState(false);
+    const [users, setUsers] = useState([]);
+    const [messages, setMessages] = useState([]);
     const [newMessage, setNewMessage] = useState("");
-    const [loading, setLoading] = useState(true);
-    const [posted, setPosted] = useState(true);
-    const messagesEnd = useRef(null)
+    const messagesEnd = useRef(null);
+    const socketRef = useRef(null);
 
-    const fetchData = async() => {
-        try{
+    const joinChat = (event) => {
+        event.preventDefault();
+        if (username.trim()) {
             setLoading(true);
-            let getName = localStorage.getItem("name");
-            const fetched = await axios.get("https://chat-box.onrender.com/" + getName);
-            setUserData(fetched.data);
-            setLoading(false);
-        }catch(error){
-            console.log(error);
+            socketRef.current = io(ENDPOINT);
+            //Sending the username while joining chat
+            socketRef.current.emit("join", username, (response) => {
+                // Handle the response received from the server
+                // console.log("Response from server:", response);
+
+                if (response.status === "success") {
+                    //First updating messages list
+                    setMessages(response.data?.messages);
+                    //Subscribing for users list and messages
+                    socketRef.current.on("users", handleUserUpdate);
+                    socketRef.current.on("newMessage", handleNewMessages);
+                    setJoinedChat(true);
+                    setLoading(false);
+                } else {
+                    handleLogout();
+                    return;
+                }
+            });
         }
     }
 
-    const newChat = async(name) => {
-        setPosted(false);
-        try{
-            const object = {"name": name};
-            await axios.post("https://chat-box.onrender.com/", object);
-        }catch(error){
-            console.log(error);
-            window.alert("Please refresh the page");
-        }
-        setPosted(true);
-        fetchData();
+    const handleUserUpdate = (usersList) => {
+        setUsers(usersList);
+    }
+
+    const handleNewMessages = (messagesList) => {
+        setMessages((prevMessages) => [...prevMessages, messagesList]);
     }
 
     const handleClose = () => {
         setChatClick(false);
     }
 
-    const handleNameEntered = (event) => {
-        const name = event.target.value;
-        name.toLowerCase();
-        localStorage.setItem("name", name);
-        setLocalName(name);
-        setNewName(false);
-        setChatInputDisplay(true);
-        newChat(name);
-        fetchData();
-    }
-    
-    const handleNameInput = (event) => {
-        const name = event.target.value;
-        setNameInput(name);
-    }
-
-    const handleNewMessage = (event) => {
-        const message = event.target.value;
-        setNewMessage(message);
-    }
-
-    const handleRefreshClick = () => {
-        fetchData();
-    }
-
-    const handleMessageSubmit = async(event) => {
-        const message = event.target.value;
-        if(!message)
+    const handleMessageSubmit = async (event) => {
+        event.preventDefault();
+        if (!newMessage.trim())
             return;
-        const newLine = userData.message.length + 1;
-        const name = userData.name;
+        const lineNumber = messages.length;
         const newMessageObj = {
-            "text" : message,
+            "text": newMessage,
             "person": "user",
-            "line": newLine
+            "line": lineNumber
         };
-        let newObj = {
-            "name": name,
-            "message": [newMessageObj]
+        let payload = {
+            "username": username,
+            "messageObj": newMessageObj
         };
-        try{
-            await axios.patch("https://chat-box.onrender.com/", newObj);
-        }catch(error){
+        try {
+            socketRef.current.emit("sendMessage", payload);
+        } catch (error) {
             console.log(error)
         }
-        const oldMessage = userData.message;
-        newObj = {
-            "name": name,
-            "message": [...oldMessage, newMessageObj]
-        };
-        setUserData(newObj);
         setNewMessage("");
-        fetchData();
     }
 
-    const handleClearChat = async() => {
-        try{
-            await axios.delete("https://chat-box.onrender.com/" + localName);
-        }catch(error){
+    const handleLogout = async () => {
+        try {
+            if (socketRef.current) {
+                socketRef.current.disconnect();
+                socketRef.current = null
+            }
+        } catch (error) {
             console.log(error);
         }
-        localStorage.clear();
-        setNewName(true);
-        setChatInputDisplay(false);
-    }
-
-    const checkNameStatus = () => {
-        let getName = localStorage.getItem("name");
-        if(getName){
-            setNewName(false);
-            setChatInputDisplay(true);
-            setLocalName(getName);
-        }else{
-            setNewName(true);
-            setChatInputDisplay(false);
-        }
+        setUsername("");
+        setJoinedChat(false);
+        setMessages([]);
+        setNewMessage("");
     }
 
     const scrollToBottom = () => {
@@ -135,63 +101,75 @@ const Chatbox = ({setChatClick}) => {
 
     useEffect(() => {
         scrollToBottom()
-    }, [userData]);
+    }, [messages]);
 
-    useEffect(() => {
-        checkNameStatus();
-        if(chatInputDisplay)
-            fetchData();
-    }, [chatInputDisplay]
-    )
-
-    return(
+    return (
         <div id="chatbox">
+            {/* Header */}
             <div className="chat-header">
                 <img alt="vimal" src={vimalLogo} className="vimalLogo" />How Can I help you?
                 <button title="close" className="close-button" onClick={handleClose}>X</button>
-                {chatInputDisplay ?<LogoutIcon className="logout" onClick={handleClearChat} /> : ""}
+                {joinedChat ? <LogoutIcon className="logout" onClick={handleLogout} /> : null}
             </div>
+
+            {joinedChat ? <div className="users-online">
+                <strong>Online Users:</strong> <span className="users">{users.length ? users.join(", ") : username}</span>
+            </div> : null}
+
+            {/* Chat Body */}
             <div className="chat-body">
-                {newName ? 
-                    <div className="start-chat">
-                        <span className="Welcome-name-para">Welcome user, Enter you name to start the live chat.
-                        I will try to reply you when I get connected.</span>
-                        <input  className="name-input" placeholder="Type your name!" onChange={handleNameInput} />
-                        <Button variant="contained" color="warning" value={nameInput} onClick={handleNameEntered}>
-                            Enter
-                        </Button >
-                    </div>:
-                    <div className="chat-started">
+                {!joinedChat ?
+
+                    // Create User
+                    (<div className="start-chat">
+                        <span className="welcome-text">Welcome user, Enter username to start the live chat.
+                            I will try to reply you when I get connected.</span>
+                        <form onSubmit={joinChat}>
+                            <input className="username-input" placeholder="Type username!" value={username} onChange={(e) => setUsername(e.target.value)} />
+                            <Button variant="contained" color="warning" onClick={joinChat}>
+                                Enter
+                            </Button >
+                        </form>
+                    </div>) :
+
+                    // Live chat
+                    (<div className="chat-started">
                         <span className="welcome-message">
-                            <NotificationsNoneIcon />Welcome user 🙏, Start chat I will try to get connected as soon as possible!!
+                            Welcome {username}! 🙏, Start chat I will try to get connected as soon as possible!!
                         </span>
-                        <span title="refresh">
+                        {/* <span title="refresh">
                             <RefreshIcon className="refresh-icon" onClick={handleRefreshClick} />
-                        </span>
-                        {posted ? (loading ? <div className="loading"><CircularProgress color="success" />Loading messages</div> : 
-                        userData.message.map((item, index) => {
-                            return <div key={index} className={item.person === "admin" ? "admin" : "user"}>
-                                <span className="person">
-                                    {item.person === "admin" ? <GiDevilMask /> : <AiOutlineUser />}{item.person === "admin" ? "admin:" : `${localName}:`}
-                                </span><br />
-                                {item.text}
-                                <div ref={messagesEnd} />
+                        </span> */}
+
+                        {loading ?
+                            <div className="loading">
+                                Creating user Chat, please be patient!<br />Sometimes it takes upto 1 minute.
                             </div>
-                        })
-                        ): <div className="loading">
-                                <CircularProgress color="success" />
-                                Creating user Chat, please be patient!<br />Sometimes it takes upto 1 to 2 minute.
-                            </div>
+                            : messages.map((message, index) => {
+                                return <div key={index} className={message.person === "admin" ? "admin" : "user"}>
+                                    <span className="person">
+                                        {message.person === "admin" ? <GiDevilMask /> : <AiOutlineUser />}{message.person === "admin" ? "admin:" : `${username}`}
+                                    </span>
+                                    {message.text}
+                                    <div ref={messagesEnd} />
+                                </div>
+                            })
                         }
-                    </div>
+                    </div>)
                 }
             </div>
-            {chatInputDisplay ? 
+
+            {/* Chat Input */}
+            {!loading && joinedChat ?
                 <div className="chat-input">
-                    <input value={newMessage} className="input-para" placeholder="Type your message here..." onChange={handleNewMessage} />
-                    <button title="send"  value={newMessage} className="input-send" onClick={handleMessageSubmit}>{">"}</button>
-                </div>:" "
+                    <form onSubmit={handleMessageSubmit}>
+                        <input value={newMessage} className="input-para" placeholder="Type your message here..." onChange={(e) => setNewMessage(e.target.value)} />
+                        <button type="submit" title="send" value={newMessage} className="input-send" onClick={handleMessageSubmit}>{">"}</button>
+                    </form>
+                </div> : null
             }
+
+            {/* Credits label */}
             <div className="chat-credit">chat box created by vimal</div>
         </div>
     )
